@@ -16,7 +16,7 @@ for (var i = 0; i < numMetaballs; i++) {
         y: Math.random() * (height - 2 * radius) + radius,
         vx: (Math.random() - 0.5) * 3,
         vy: (Math.random() - 0.5) * 3,
-        r: radius * 0.75
+        r: radius * 0.9
     });
 }
 
@@ -57,7 +57,7 @@ gl_FragColor = vec4(mix(vec3(x / WIDTH, y / HEIGHT, 1.0), vec3(0, 0, 0), max(0.0
 return;
 }
 
-gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+gl_FragColor = vec4(0.0, 0.0, 0.0, 0.0); //Background color
 }
 
 `;

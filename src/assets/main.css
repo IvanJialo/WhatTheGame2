@@ -39,11 +39,11 @@ a,
 @tailwind utilities;
 
 .dark {
-  @apply bg-gray-900 text-gray-100;
+  @apply bg-black text-gray-100;
 }
 
 .dark .bg-white {
-  @apply bg-gray-800;
+  @apply bg-black;
 }
 
 .dark .text-gray-400 {
