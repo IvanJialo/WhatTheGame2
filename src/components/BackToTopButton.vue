@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed bottom-10 right-10">
+    <div class="fixed bottom-20 right-20">
         <a class="inline-block rounded-full bg-[#DCD0FF] p-2 text-black shadow transition hover:bg-[#b197ff] sm:p-3 lg:p-4"
             href="#">
             <span class="sr-only">Back to top</span>

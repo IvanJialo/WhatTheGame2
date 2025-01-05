@@ -115,5 +115,32 @@
                 </li>
             </ul>
         </div>
+        <div class="mt-8  border-t border-gray-100 pt-8 dark:border-gray-800">
+            <div class=" mb-5 mr-5 ml-5 sm:flex sm:justify-between">
+                <p class="text-xs text-gray-500 dark:text-gray-400">
+                    &copy; 2025. WhatTheGame. All rights reserved.
+                </p>
+
+                <ul class="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
+                    <li>
+                        <a href="#" class="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+                            Cookies
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </template>
