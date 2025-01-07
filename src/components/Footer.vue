@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-black">
+    <footer class="bg-black border-b border-gray-200 dark:border-gray-600">
         <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
             <div class="flex justify-center text-teal-600 dark:text-teal-300">
                 <img src="/src/assets/logo.png" alt="WhatTheGame" class="h-32 w-auto" draggable="false">

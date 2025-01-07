@@ -1,35 +1,11 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 import ToggleDarkLight from './ToggleDarkLight.vue';
-import { onMounted, ref } from 'vue';
-
-// Referencia para la opacidad dinámica
-const navbarOpacity = ref(0);
-
-onMounted(() => {
-  const handleScroll = () => {
-    const scrollTop = window.scrollY; // Obtén la posición de scroll
-    const maxOpacity = 0.9; // Máxima opacidad permitida
-    const scrollThreshold = 300; // Cantidad de scroll para alcanzar la opacidad máxima
-
-    // Calcula la opacidad según la posición del scroll
-    navbarOpacity.value = Math.min(scrollTop / scrollThreshold, maxOpacity);
-  };
-
-  // Escucha el evento de scroll
-  window.addEventListener('scroll', handleScroll);
-
-  // Limpia el evento al desmontar el componente
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-});
 </script>
 
 <template>
   <header
-    :style="{ backgroundColor: `rgba(0, 0, 0, ${navbarOpacity})` }"
-    class="fixed top-0 w-full transition duration-300"
+    class="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-white/60 backdrop-blur dark:border-gray-600 dark:bg-black/60"
   >
     <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
       <a class="block" href="#">
