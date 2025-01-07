@@ -13,10 +13,11 @@
 </template>
 
 <script>
+document.documentElement.classList.add('dark')
 export default {
   data() {
     return {
-      isDarkTheme: false
+      isDarkTheme: true
     }
   },
   watch: {

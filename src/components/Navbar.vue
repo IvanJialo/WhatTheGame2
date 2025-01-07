@@ -18,7 +18,7 @@ import ToggleDarkLight from './ToggleDarkLight.vue';
           <ul class="flex items-center gap-6 text-sm">
             <li>
               <a
-                class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                class="text-black transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                 href="#"
               >
                 About
