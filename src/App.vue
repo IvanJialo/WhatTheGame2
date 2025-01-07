@@ -8,7 +8,6 @@ import './assets/backgroundballs.js';
 
 <template>
   <div class="cuelpo">
-    <canvas></canvas>
     <Navbar />
     <RouterView />
     <BackToTop />
