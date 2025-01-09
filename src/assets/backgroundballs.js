@@ -1,16 +1,17 @@
-var canvas = document.createElement("canvas");
-var width = canvas.width = window.innerWidth * 0.75;
-var height = canvas.height = window.innerHeight * 0.75;
+let canvas = document.createElement("canvas");
+let width = canvas.width = window.innerWidth * 0.75;
+let height = canvas.height = window.innerHeight * 0.75;
+canvas.classList.add("animate-blurred-fade-in");
 document.body.appendChild(canvas);
-var gl = canvas.getContext('webgl');
+let gl = canvas.getContext('webgl');
 
-var mouse = { x: 0, y: 0 };
+let mouse = { x: 0, y: 0 };
 
-var numMetaballs = 25;
-var metaballs = [];
+let numMetaballs = 25;
+let metaballs = [];
 
-for (var i = 0; i < numMetaballs; i++) {
-    var radius = Math.random() * 60 + 10;
+for (let i = 0; i < numMetaballs; i++) {
+    let radius = Math.random() * 60 + 10;
     metaballs.push({
         x: Math.random() * (width - 2 * radius) + radius,
         y: Math.random() * (height - 2 * radius) + radius,
@@ -20,7 +21,7 @@ for (var i = 0; i < numMetaballs; i++) {
     });
 }
 
-var vertexShaderSrc = `
+let vertexShaderSrc = `
 attribute vec2 position;
 
 void main() {
@@ -30,7 +31,7 @@ gl_Position = vec4(position, 0.0, 1.0);
 }
 `;
 
-var fragmentShaderSrc = `
+let fragmentShaderSrc = `
 precision highp float;
 
 const float WIDTH = ` + (width >> 0) + `.0;
@@ -62,26 +63,26 @@ gl_FragColor = vec4(0.0, 0.0, 0.0, 0.0); //Background color
 
 `;
 
-var vertexShader = compileShader(vertexShaderSrc, gl.VERTEX_SHADER);
-var fragmentShader = compileShader(fragmentShaderSrc, gl.FRAGMENT_SHADER);
+let vertexShader = compileShader(vertexShaderSrc, gl.VERTEX_SHADER);
+let fragmentShader = compileShader(fragmentShaderSrc, gl.FRAGMENT_SHADER);
 
-var program = gl.createProgram();
+let program = gl.createProgram();
 gl.attachShader(program, vertexShader);
 gl.attachShader(program, fragmentShader);
 gl.linkProgram(program);
 gl.useProgram(program);
 
-var vertexData = new Float32Array([
+let vertexData = new Float32Array([
     -1.0, 1.0, // top left
     -1.0, -1.0, // bottom left
     1.0, 1.0, // top right
     1.0, -1.0, // bottom right
 ]);
-var vertexDataBuffer = gl.createBuffer();
+let vertexDataBuffer = gl.createBuffer();
 gl.bindBuffer(gl.ARRAY_BUFFER, vertexDataBuffer);
 gl.bufferData(gl.ARRAY_BUFFER, vertexData, gl.STATIC_DRAW);
 
-var positionHandle = getAttribLocation(program, 'position');
+let positionHandle = getAttribLocation(program, 'position');
 gl.enableVertexAttribArray(positionHandle);
 gl.vertexAttribPointer(positionHandle,
     2, // position is a vec2
@@ -91,12 +92,12 @@ gl.vertexAttribPointer(positionHandle,
     0 // offset into each span of vertex data
 );
 
-var metaballsHandle = getUniformLocation(program, 'metaballs');
+let metaballsHandle = getUniformLocation(program, 'metaballs');
 
 loop();
 function loop() {
-    for (var i = 0; i < numMetaballs; i++) {
-        var metaball = metaballs[i];
+    for (let i = 0; i < numMetaballs; i++) {
+        let metaball = metaballs[i];
         metaball.x += metaball.vx;
         metaball.y += metaball.vy;
 
@@ -104,10 +105,10 @@ function loop() {
         if (metaball.y < metaball.r || metaball.y > height - metaball.r) metaball.vy *= -1;
     }
 
-    var dataToSendToGPU = new Float32Array(3 * numMetaballs);
-    for (var i = 0; i < numMetaballs; i++) {
-        var baseIndex = 3 * i;
-        var mb = metaballs[i];
+    let dataToSendToGPU = new Float32Array(3 * numMetaballs);
+    for (let i = 0; i < numMetaballs; i++) {
+        let baseIndex = 3 * i;
+        let mb = metaballs[i];
         dataToSendToGPU[baseIndex + 0] = mb.x;
         dataToSendToGPU[baseIndex + 1] = mb.y;
         dataToSendToGPU[baseIndex + 2] = mb.r;
@@ -121,7 +122,7 @@ function loop() {
 }
 
 function compileShader(shaderSource, shaderType) {
-    var shader = gl.createShader(shaderType);
+    let shader = gl.createShader(shaderType);
     gl.shaderSource(shader, shaderSource);
     gl.compileShader(shader);
 
@@ -133,7 +134,7 @@ function compileShader(shaderSource, shaderType) {
 }
 
 function getUniformLocation(program, name) {
-    var uniformLocation = gl.getUniformLocation(program, name);
+    let uniformLocation = gl.getUniformLocation(program, name);
     if (uniformLocation === -1) {
         throw 'Can not find uniform ' + name + '.';
     }
@@ -141,7 +142,7 @@ function getUniformLocation(program, name) {
 }
 
 function getAttribLocation(program, name) {
-    var attributeLocation = gl.getAttribLocation(program, name);
+    let attributeLocation = gl.getAttribLocation(program, name);
     if (attributeLocation === -1) {
         throw 'Can not find attribute ' + name + '.';
     }

@@ -5,6 +5,6 @@ import HeroBanner from '@/components/HeroBanner.vue';
 
 <template>
   <main>
-    <HeroBanner />
+    <HeroBanner class="animate-blurred-fade-in"/>
   </main>
 </template>

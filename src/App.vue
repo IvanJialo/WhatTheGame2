@@ -10,7 +10,7 @@ import './assets/backgroundballs.js';
   <div class="cuelpo">
     <Navbar />
     <RouterView />
-    <BackToTop />
+    <BackToTop class="animate-blurred-fade-in"/>
     <Footers />
   </div>
 </template>
