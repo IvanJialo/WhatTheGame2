@@ -8,61 +8,42 @@ import ToggleDarkLight from './ToggleDarkLight.vue';
     class="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-white/60 backdrop-blur dark:border-gray-600 dark:bg-black/60"
   >
     <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-      <a class="block" href="#">
         <span class="sr-only">Home</span>
         <img alt="Logo" src="/src/assets/logo.png" class="h-16 w-auto" draggable="false" />
-      </a>
-
       <div class="flex flex-1 items-center justify-end md:justify-between">
         <nav aria-label="Global" class="hidden md:block">
           <ul class="flex items-center gap-6 text-sm">
             <li>
-              <a
+              <RouterLink
                 class="text-black transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                href="#"
+                to="/"
               >
-                About
-              </a>
+                Home
+              </RouterLink>
             </li>
             <li>
-              <a
+              <RouterLink
                 class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                href="#"
+                to="/categories"
               >
-                Careers
-              </a>
+                Categories
+              </RouterLink>
             </li>
             <li>
-              <a
+              <RouterLink
                 class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                href="#"
+                to="/most-played"
               >
-                History
-              </a>
+                Most Played
+              </RouterLink>
             </li>
             <li>
-              <a
+              <RouterLink
                 class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                href="#"
+                to="/latest"
               >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                href="#"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                href="#"
-              >
-                Blog
-              </a>
+                Latest
+              </RouterLink>
             </li>
           </ul>
         </nav>

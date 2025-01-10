@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
+import CategoriesView from '../views/CategoriesView.vue'
+import MostPlayedView from '../views/MostPlayedView.vue'
+import LatestView from '../views/LatestView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,9 +13,19 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/about',
-      name: 'about',
-      component: AboutView,
+      path: '/categories',
+      name: 'categories',
+      component: CategoriesView,
+    },
+    {
+      path: '/most-played',
+      name: 'most-played',
+      component: MostPlayedView,
+    },
+    {
+      path: '/latest',
+      name: 'latest',
+      component: LatestView,
     },
   ],
 })
