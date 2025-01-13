@@ -1,6 +1,6 @@
 <template>
     <div class="fixed bottom-20 right-20">
-        <a class="inline-block rounded-full bg-[#DCD0FF] p-2 text-black shadow transition hover:bg-[#b197ff] sm:p-3 lg:p-4"
+        <a class="inline-block rounded-full dark:bg-[#DCD0FF] bg-[#b197ff] p-2 text-black shadow transition dark:hover:bg-[#b197ff] hover:bg-[#DCD0FF] sm:p-3 lg:p-4"
             href="#">
             <span class="sr-only">Back to top</span>
 
