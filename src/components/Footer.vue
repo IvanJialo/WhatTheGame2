@@ -1,53 +1,53 @@
 <template>
-    <footer class="bg-black border-b border-gray-200 dark:border-gray-600">
+    <footer class="bg-white dark:bg-black border-b border-gray-200 dark:border-gray-600">
         <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
             <div class="flex justify-center text-teal-600 dark:text-teal-300">
                 <img src="/src/assets/logo.png" alt="WhatTheGame" class="h-32 w-auto" draggable="false">
             </div>
 
-            <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400">
+            <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-black dark:text-white">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
                 itaque neque.
             </p>
 
             <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
                 <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                    <a class="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                         href="#">
                         About
                     </a>
                 </li>
 
                 <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                    <a class="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                         href="#">
                         Careers
                     </a>
                 </li>
 
                 <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                    <a class="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                         href="#">
                         History
                     </a>
                 </li>
 
                 <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                    <a class="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                         href="#">
                         Services
                     </a>
                 </li>
 
                 <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                    <a class="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                         href="#">
                         Projects
                     </a>
                 </li>
 
                 <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                    <a class="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                         href="#">
                         Blog
                     </a>
@@ -57,7 +57,7 @@
             <ul class="mt-12 flex justify-center gap-6 md:gap-8">
                 <li>
                     <a href="#" rel="noreferrer" target="_blank"
-                        class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75">
+                        class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
                         <span class="sr-only">Facebook</span>
                         <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd"
@@ -69,7 +69,7 @@
 
                 <li>
                     <a href="#" rel="noreferrer" target="_blank"
-                        class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75">
+                        class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
                         <span class="sr-only">Instagram</span>
                         <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd"
@@ -81,7 +81,7 @@
 
                 <li>
                     <a href="#" rel="noreferrer" target="_blank"
-                        class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75">
+                        class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
                         <span class="sr-only">Twitter</span>
                         <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path
@@ -92,7 +92,7 @@
 
                 <li>
                     <a href="#" rel="noreferrer" target="_blank"
-                        class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75">
+                        class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
                         <span class="sr-only">GitHub</span>
                         <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd"
@@ -104,7 +104,7 @@
 
                 <li>
                     <a href="#" rel="noreferrer" target="_blank"
-                        class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75">
+                        class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
                         <span class="sr-only">Dribbble</span>
                         <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd"
@@ -115,7 +115,7 @@
                 </li>
             </ul>
         </div>
-        <div class="mt-8  border-t border-gray-100 pt-8 dark:border-gray-800">
+        <div class="mt-8  border-t border-gray-500 pt-8 dark:border-gray-800">
             <div class=" mb-5 mr-5 ml-5 sm:flex sm:justify-between">
                 <p class="text-xs text-gray-500 dark:text-gray-400">
                     &copy; 2025. WhatTheGame. All rights reserved.
