@@ -1,8 +1,16 @@
 <script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import GameCard from '@/components/GameCard.vue';
+import dataGame from '@/data/games.json';
 </script>
+
 <template>
-  <div class="flex justify-center items-center h-full">
-    <p class="bg-[#DCD0FF] px-5 py-2.5 text-sm font-medium text-black rounded-md">Hola estas en categorias</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-36">
+    <!-- Iterar sobre las categorías y luego los juegos -->
+    <GameCard
+      v-for="(game, index) in dataGame.categories.flatMap(category => category.games)"
+      :key="index"
+      :game="game"
+    />
   </div>
 </template>
-
