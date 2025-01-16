@@ -18,7 +18,7 @@ import './assets/backgroundballs.js';
 <style>
 .cuelpo {
   display: grid;
-  grid-template-rows: 3000px auto;
+  grid-template-rows: 1fr 1fr;
   height: 100vh;
 }
 canvas {

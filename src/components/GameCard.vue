@@ -1,20 +1,52 @@
 <script setup>
+import { RouterLink, RouterView } from 'vue-router';
 import { defineProps } from 'vue';
+import { ref } from 'vue';
 
-const props = defineProps({
-    game: {
-        type: Object,
-        required: true,
-    },
+// Estado reactivo para alternar entre mostrar descripción o no
+const showDescription = ref(false);
+
+// Función para alternar el estado
+const toggleDescription = () => {
+  showDescription.value = !showDescription.value;
+};
+
+// Recibiendo las props
+defineProps({
+  game: {
+    type: Object,
+    required: true,
+  },
 });
 </script>
 
 <template>
-  <!-- Mostrando un ejemplo simple para verificar que los datos se reciben -->
-  <div class="p-4 border rounded-lg bg-black/75 backdrop-blur">
-    <h2 class="text-xl font-bold">{{ game.name }}</h2>
-    <img :src="game.cover_image" :alt="game.name" class="w-32 h-32 rounded-lg shadow-lg" />
-    <p class="mt-2 text-gray-600">{{ game.description }}</p>
-    <p class="mt-1 text-sm text-gray-500">Average Playtime: {{ game.average_playtime }}</p>
-  </div>
+
+  <a href="#" class="group relative block h-64 sm:h-80 lg:h-96 ">
+
+    <span class="absolute inset-0 border-2 border-dashed rounded-lg border-t-[#b197ff] border-r-[#b197ff]/50 border-b-[#b197ff]/30 border-l-[#b197ff]/10"></span>
+  
+    <div
+      class="relative flex h-full transform items-end border-2 rounded-lg border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
+    >
+      <div
+        class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-50 sm:p-6 lg:p-8"
+      >
+        <img :src="game.cover_image" :alt="game.name" class="w-full rounded-lg" />
+        <h2 class="mt-4 text-xl font-medium sm:text-2xl">{{ game.name }}</h2>
+      </div>
+  
+      <div
+        class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8"
+      >
+        <h3 class="mt-4 text-xl font-medium sm:text-2xl">{{ game.name }}</h3>
+  
+        <p class="mt-4 text-sm sm:text-base">
+          {{ game.description }}
+        </p>
+  
+        <p class="mt-8 font-bold">View more</p>
+      </div>
+    </div>
+  </a>
 </template>
