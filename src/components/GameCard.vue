@@ -24,10 +24,10 @@ defineProps({
 
   <a href="#" class="group relative block h-64 sm:h-80 lg:h-96 ">
 
-    <span class="absolute inset-0 border-2 border-dashed rounded-lg border-t-[#b197ff] border-r-[#b197ff]/50 border-b-[#b197ff]/30 border-l-[#b197ff]/10"></span>
+    <span class="absolute inset-0 border-2 border-dashed rounded-lg border-t-[#b197ff] border-r-[#b197ff]/50 border-b-[#b197ff]/40 border-l-[#b197ff]/30"></span>
   
     <div
-      class="relative flex h-full transform items-end border-2 rounded-lg border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
+      class="relative flex h-full transform items-end rounded-lg  bg-white/60 dark:bg-black/80 backdrop-blur transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
     >
       <div
         class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-50 sm:p-6 lg:p-8"
