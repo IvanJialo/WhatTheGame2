@@ -2,7 +2,8 @@
     <footer class="bg-white dark:bg-black border-b border-gray-200 dark:border-gray-600">
         <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
             <div class="flex justify-center text-teal-600 dark:text-teal-300">
-                <img src="/src/assets/logo.png" alt="WhatTheGame" class="h-32 w-auto" draggable="false">
+                <img src="/src/assets/logo.png" alt="WhatTheGame" class="h-32 w-auto hidden dark:block" draggable="false">
+                <img src="/src/assets/logo_dark.png" alt="WhatTheGame" class="h-32 w-auto dark:hidden" draggable="false">
             </div>
 
             <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-black dark:text-white">
