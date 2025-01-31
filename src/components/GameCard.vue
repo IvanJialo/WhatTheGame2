@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-  <RouterLink :to="{ name: 'game' , params: { id: game.name } }" class="group relative block h-64 sm:h-80 lg:h-96">
+  <RouterLink :to="{ name: 'game', params: { id: game.name } }" class="group relative block h-64 sm:h-80 lg:h-96">
     <span class="absolute inset-0 border-2 border-dashed rounded-lg border-t-[#b197ff] border-r-[#b197ff]/50 border-b-[#b197ff]/40 border-l-[#b197ff]/30"></span>
   
     <div
@@ -31,6 +31,12 @@ defineProps({
         <p class="mt-4 text-sm sm:text-base">
           {{ game.description }}
         </p>
+        <!-- Mostrar más detalles del juego -->
+        <div class="mt-4">
+          <p class="text-sm"><strong>Desarrollador:</strong> {{ game.developer }}</p>
+          <p class="text-sm"><strong>Plataformas:</strong> {{ game.platforms.join(", ") }}</p>
+          <p class="text-sm"><strong>Lanzamiento:</strong> {{ game.release_date }}</p>
+        </div>
         <p class="mt-8 font-bold">View more</p>
       </div>
     </div>
