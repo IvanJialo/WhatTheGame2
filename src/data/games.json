@@ -277,10 +277,9 @@
           "name": "Wii Sports",
           "developer": "Nintendo",
           "publisher": "Nintendo",
+          "most_played": 90,
           "description": "Enjoy a variety of sports games that use intuitive motion controls to mimic real sports like tennis, bowling, and baseball.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=sGnugEHoL4o"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=sGnugEHoL4o"],
           "trailer_preview": "https://www.youtube.com/watch?v=sGnugEHoL4o",
           "prices": {
             "Amazon": "$29.99",
@@ -288,9 +287,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/11159_Wii_Sports.png?width=250",
           "average_playtime": "50 hours",
-          "platforms": [
-            "Wii"
-          ],
+          "platforms": ["Wii"],
           "release_date": "2006-11-19",
           "reviews": {
             "IGN": "9.0/10",
@@ -302,10 +299,9 @@
           "name": "UFC 4",
           "developer": "EA Vancouver",
           "publisher": "Electronic Arts",
+          "most_played": 75,
           "description": "Shape your fighter and your legacy in the dynamic UFC universe. Train, fight, and rise to the top.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=DWZPAFme1Jg"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=DWZPAFme1Jg"],
           "trailer_preview": "https://www.youtube.com/watch?v=DWZPAFme1Jg",
           "prices": {
             "PlayStation Store": "$59.99",
@@ -313,12 +309,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/81845_EA_Sports_UFC_4.jpg?width=250",
           "average_playtime": "25 hours",
-          "platforms": [
-            "PS4",
-            "PS5",
-            "Xbox One",
-            "Xbox Series X|S"
-          ],
+          "platforms": ["PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2020-08-14",
           "reviews": {
             "IGN": "8.2/10",
@@ -330,10 +321,9 @@
           "name": "FIFA 23",
           "developer": "EA Sports",
           "publisher": "Electronic Arts",
+          "most_played": 95,
           "description": "The ultimate football simulation experience with updated teams, hypermotion gameplay, and more realistic animations.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=H6Xlf7a1wtk"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=H6Xlf7a1wtk"],
           "trailer_preview": "https://www.youtube.com/watch?v=H6Xlf7a1wtk",
           "prices": {
             "Steam": "$69.99",
@@ -341,13 +331,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/110878_FIFA_23.jpg?width=250",
           "average_playtime": "50+ hours",
-          "platforms": [
-            "PC",
-            "PS4",
-            "PS5",
-            "Xbox One",
-            "Xbox Series X|S"
-          ],
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2022-09-30",
           "reviews": {
             "IGN": "8.5/10",
@@ -359,10 +343,9 @@
           "name": "NBA 2K23",
           "developer": "Visual Concepts",
           "publisher": "2K Sports",
+          "most_played": 85,
           "description": "Play as your favorite basketball legends or create your own team in the most realistic basketball simulator to date.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=1YgsSy0YxJc"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=1YgsSy0YxJc"],
           "trailer_preview": "https://www.youtube.com/watch?v=1YgsSy0YxJc",
           "prices": {
             "Steam": "$59.99",
@@ -370,13 +353,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/110880_NBA_2K23.jpg?width=250",
           "average_playtime": "40 hours",
-          "platforms": [
-            "PC",
-            "PS4",
-            "PS5",
-            "Xbox One",
-            "Xbox Series X|S"
-          ],
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2022-09-08",
           "reviews": {
             "IGN": "7.9/10",
@@ -388,10 +365,9 @@
           "name": "Rugby 22",
           "developer": "Eko Software",
           "publisher": "Nacon",
+          "most_played": 60,
           "description": "Play as the best rugby teams in this dynamic and challenging rugby simulator with advanced gameplay mechanics.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=OcQm4SWOInI"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=OcQm4SWOInI"],
           "trailer_preview": "https://www.youtube.com/watch?v=OcQm4SWOInI",
           "prices": {
             "Steam": "$49.99",
@@ -399,18 +375,117 @@
           },
           "cover_image": "https://howlongtobeat.com/games/103437_Rugby_22.jpg?width=250",
           "average_playtime": "30 hours",
-          "platforms": [
-            "PC",
-            "PS4",
-            "PS5",
-            "Xbox One",
-            "Xbox Series X|S"
-          ],
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2022-01-27",
           "reviews": {
             "IGN": "7.0/10",
             "Vandal": "6.8/10",
             "Metacritic": "68/100"
+          }
+        },
+        {
+          "name": "Madden NFL 23",
+          "developer": "EA Tiburon",
+          "publisher": "Electronic Arts",
+          "most_played": 80,
+          "description": "The latest installment in the Madden NFL series, featuring updated rosters, improved gameplay mechanics, and realistic animations.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=5s4s9hA4q7k"],
+          "trailer_preview": "https://www.youtube.com/watch?v=5s4s9hA4q7k",
+          "prices": {
+            "Steam": "$59.99",
+            "PlayStation Store": "$59.99"
+          },
+          "cover_image": "https://example.com/madden-nfl-23-cover.jpg",
+          "average_playtime": "40 hours",
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
+          "release_date": "2022-08-19",
+          "reviews": {
+            "IGN": "7.8/10",
+            "Metacritic": "77/100"
+          }
+        },
+        {
+          "name": "MLB The Show 23",
+          "developer": "San Diego Studio",
+          "publisher": "Sony Interactive Entertainment",
+          "most_played": 70,
+          "description": "The definitive baseball simulation game with updated rosters, realistic gameplay, and a variety of modes to enjoy.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=5s4s9hA4q7k"],
+          "trailer_preview": "https://www.youtube.com/watch?v=5s4s9hA4q7k",
+          "prices": {
+            "PlayStation Store": "$69.99",
+            "Xbox Store": "$69.99"
+          },
+          "cover_image": "https://example.com/mlb-the-show-23-cover.jpg",
+          "average_playtime": "35 hours",
+          "platforms": ["PS4", "PS5", "Xbox One", "Xbox Series X|S"],
+          "release_date": "2023-03-28",
+          "reviews": {
+            "IGN": "8.0/10",
+            "Metacritic": "82/100"
+          }
+        },
+        {
+          "name": "Tony Hawk's Pro Skater 1 + 2",
+          "developer": "Vicarious Visions",
+          "publisher": "Activision",
+          "most_played": 65,
+          "description": "A remastered collection of the first two Tony Hawk games, featuring updated graphics, controls, and all the original levels.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=5s4s9hA4q7k"],
+          "trailer_preview": "https://www.youtube.com/watch?v=5s4s9hA4q7k",
+          "prices": {
+            "Steam": "$39.99",
+            "PlayStation Store": "$39.99"
+          },
+          "cover_image": "https://example.com/tony-hawk-cover.jpg",
+          "average_playtime": "20 hours",
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
+          "release_date": "2020-09-04",
+          "reviews": {
+            "IGN": "9.0/10",
+            "Metacritic": "89/100"
+          }
+        },
+        {
+          "name": "PGA Tour 2K23",
+          "developer": "HB Studios",
+          "publisher": "2K Sports",
+          "most_played": 55,
+          "description": "The ultimate golf simulation game with realistic courses, professional players, and a robust career mode.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=5s4s9hA4q7k"],
+          "trailer_preview": "https://www.youtube.com/watch?v=5s4s9hA4q7k",
+          "prices": {
+            "Steam": "$59.99",
+            "PlayStation Store": "$59.99"
+          },
+          "cover_image": "https://example.com/pga-tour-2k23-cover.jpg",
+          "average_playtime": "30 hours",
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
+          "release_date": "2022-10-14",
+          "reviews": {
+            "IGN": "7.5/10",
+            "Metacritic": "75/100"
+          }
+        },
+        {
+          "name": "WWE 2K23",
+          "developer": "Visual Concepts",
+          "publisher": "2K Sports",
+          "most_played": 50,
+          "description": "The latest installment in the WWE series, featuring updated rosters, improved gameplay, and a variety of match types.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=5s4s9hA4q7k"],
+          "trailer_preview": "https://www.youtube.com/watch?v=5s4s9hA4q7k",
+          "prices": {
+            "Steam": "$59.99",
+            "PlayStation Store": "$59.99"
+          },
+          "cover_image": "https://example.com/wwe-2k23-cover.jpg",
+          "average_playtime": "25 hours",
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
+          "release_date": "2023-03-17",
+          "reviews": {
+            "IGN": "8.0/10",
+            "Metacritic": "78/100"
           }
         }
       ]
@@ -422,10 +497,9 @@
           "name": "Elden Ring",
           "developer": "FromSoftware",
           "publisher": "Bandai Namco Entertainment",
+          "most_played": 98,
           "description": "Explore a vast and treacherous world full of mythical creatures, powerful enemies, and secrets to uncover in this action RPG.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=e5wwSxlzdlQ"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=e5wwSxlzdlQ"],
           "trailer_preview": "https://www.youtube.com/watch?v=e5wwSxlzdlQ",
           "prices": {
             "Steam": "$59.99",
@@ -433,13 +507,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/68151_Elden_Ring.jpg?width=250",
           "average_playtime": "80+ hours",
-          "platforms": [
-            "PC",
-            "PS4",
-            "PS5",
-            "Xbox One",
-            "Xbox Series X|S"
-          ],
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2022-02-25",
           "reviews": {
             "IGN": "10/10",
@@ -451,10 +519,9 @@
           "name": "Dark Souls III",
           "developer": "FromSoftware",
           "publisher": "Bandai Namco Entertainment",
+          "most_played": 80,
           "description": "Battle through dark and gothic landscapes while facing relentless foes and uncovering the mystery of the fading embers.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=GLtO4RDnPHs"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=GLtO4RDnPHs"],
           "trailer_preview": "https://www.youtube.com/watch?v=GLtO4RDnPHs",
           "prices": {
             "Steam": "$49.99",
@@ -462,11 +529,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/Dark_souls_3_cover_art.jpg?width=250",
           "average_playtime": "50 hours",
-          "platforms": [
-            "PC",
-            "PS4",
-            "Xbox One"
-          ],
+          "platforms": ["PC", "PS4", "Xbox One"],
           "release_date": "2016-04-12",
           "reviews": {
             "IGN": "9.5/10",
@@ -478,10 +541,9 @@
           "name": "Dark Souls II",
           "developer": "FromSoftware",
           "publisher": "Bandai Namco Entertainment",
+          "most_played": 75,
           "description": "Dive into a brutal world filled with cryptic lore and formidable enemies in the second installment of the Dark Souls series.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=eBviLFMPfDg"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=eBviLFMPfDg"],
           "trailer_preview": "https://www.youtube.com/watch?v=eBviLFMPfDg",
           "prices": {
             "Steam": "$39.99",
@@ -489,11 +551,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/Dark_Souls_II_cover.jpg?width=250",
           "average_playtime": "45 hours",
-          "platforms": [
-            "PC",
-            "PS3",
-            "Xbox 360"
-          ],
+          "platforms": ["PC", "PS3", "Xbox 360"],
           "release_date": "2014-03-11",
           "reviews": {
             "IGN": "9.0/10",
@@ -505,10 +563,9 @@
           "name": "Grand Theft Auto V",
           "developer": "Rockstar North",
           "publisher": "Rockstar Games",
+          "most_played": 100,
           "description": "Experience the lives of three criminals as they pursue wealth and power in the sprawling open-world city of Los Santos.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=QkkoHAzjnUs"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=QkkoHAzjnUs"],
           "trailer_preview": "https://www.youtube.com/watch?v=QkkoHAzjnUs",
           "prices": {
             "Steam": "$29.99",
@@ -516,15 +573,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/4064_Grand_Theft_Auto_V.jpg?width=250",
           "average_playtime": "35 hours (Main Story)",
-          "platforms": [
-            "PC",
-            "PS3",
-            "PS4",
-            "PS5",
-            "Xbox 360",
-            "Xbox One",
-            "Xbox Series X|S"
-          ],
+          "platforms": ["PC", "PS3", "PS4", "PS5", "Xbox 360", "Xbox One", "Xbox Series X|S"],
           "release_date": "2013-09-17",
           "reviews": {
             "IGN": "10/10",
@@ -536,10 +585,9 @@
           "name": "Fallout 4",
           "developer": "Bethesda Game Studios",
           "publisher": "Bethesda Softworks",
+          "most_played": 82,
           "description": "Venture through a post-apocalyptic wasteland filled with mutants, factions, and choices that define your survival.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=X5aJfebzkrM"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=X5aJfebzkrM"],
           "trailer_preview": "https://www.youtube.com/watch?v=X5aJfebzkrM",
           "prices": {
             "Steam": "$19.99",
@@ -547,16 +595,115 @@
           },
           "cover_image": "https://howlongtobeat.com/games/Fallout_4.jpg?width=250",
           "average_playtime": "60+ hours",
-          "platforms": [
-            "PC",
-            "PS4",
-            "Xbox One"
-          ],
+          "platforms": ["PC", "PS4", "Xbox One"],
           "release_date": "2015-11-10",
           "reviews": {
             "IGN": "9.5/10",
             "Vandal": "9.2/10",
             "Metacritic": "87/100"
+          }
+        },
+        {
+          "name": "Red Dead Redemption 2",
+          "developer": "Rockstar Games",
+          "publisher": "Rockstar Games",
+          "most_played": 95,
+          "description": "An epic tale of life in America’s unforgiving heartland. Explore vast landscapes, hunt, and survive in the Wild West.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=eaW0tYpxyp0"],
+          "trailer_preview": "https://www.youtube.com/watch?v=eaW0tYpxyp0",
+          "prices": {
+            "Steam": "$59.99",
+            "PlayStation Store": "$59.99"
+          },
+          "cover_image": "https://howlongtobeat.com/games/27045_Red_Dead_Redemption_II.jpg?width=250",
+          "average_playtime": "80+ hours",
+          "platforms": ["PC", "PS4", "Xbox One"],
+          "release_date": "2018-10-26",
+          "reviews": {
+            "IGN": "10/10",
+            "Metacritic": "97/100"
+          }
+        },
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "developer": "CD Projekt Red",
+          "publisher": "CD Projekt",
+          "most_played": 92,
+          "description": "Hunt monsters and explore a sprawling open world in this award-winning RPG. Choices matter in Geralt’s epic journey.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=c0i88t0Kacs"],
+          "trailer_preview": "https://www.youtube.com/watch?v=c0i88t0Kacs",
+          "prices": {
+            "Steam": "$39.99",
+            "GOG": "$29.99"
+          },
+          "cover_image": "https://howlongtobeat.com/games/10270_The_Witcher_3_Wild_Hunt.jpg?width=250",
+          "average_playtime": "100+ hours",
+          "platforms": ["PC", "PS4", "Xbox One", "Nintendo Switch"],
+          "release_date": "2015-05-19",
+          "reviews": {
+            "IGN": "9.3/10",
+            "Metacritic": "93/100"
+          }
+        },
+        {
+          "name": "Horizon Forbidden West",
+          "developer": "Guerrilla Games",
+          "publisher": "Sony Interactive Entertainment",
+          "most_played": 88,
+          "description": "Explore a post-apocalyptic world overrun by robotic creatures. Uncover secrets and fight to save humanity.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=Lq594XmpPBg"],
+          "trailer_preview": "https://www.youtube.com/watch?v=Lq594XmpPBg",
+          "prices": {
+            "PlayStation Store": "$69.99"
+          },
+          "cover_image": "https://howlongtobeat.com/games/81848_Horizon_Forbidden_West.jpg?width=250",
+          "average_playtime": "30 hours",
+          "platforms": ["PS4", "PS5"],
+          "release_date": "2022-02-18",
+          "reviews": {
+            "IGN": "9.0/10",
+            "Metacritic": "88/100"
+          }
+        },
+        {
+          "name": "Assassin's Creed Valhalla",
+          "developer": "Ubisoft Montreal",
+          "publisher": "Ubisoft",
+          "most_played": 85,
+          "description": "Lead your Viking clan to glory in 9th-century England. Raid, build settlements, and forge alliances.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=ssrNcwxALS4"],
+          "trailer_preview": "https://www.youtube.com/watch?v=ssrNcwxALS4",
+          "prices": {
+            "Steam": "$59.99",
+            "Ubisoft Store": "$59.99"
+          },
+          "cover_image": "https://howlongtobeat.com/games/65152_Assassins_Creed_Valhalla.jpg?width=250",
+          "average_playtime": "60+ hours",
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
+          "release_date": "2020-11-10",
+          "reviews": {
+            "IGN": "8.5/10",
+            "Metacritic": "84/100"
+          }
+        },
+        {
+          "name": "The Legend of Zelda: Breath of the Wild",
+          "developer": "Nintendo",
+          "publisher": "Nintendo",
+          "most_played": 90,
+          "description": "Explore the kingdom of Hyrule in this reimagined open-world adventure. Solve puzzles, fight enemies, and uncover secrets.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=zw47_q9wbBE"],
+          "trailer_preview": "https://www.youtube.com/watch?v=zw47_q9wbBE",
+          "prices": {
+            "Nintendo eShop": "$59.99"
+          },
+          "cover_image": "https://howlongtobeat.com/games/38051_The_Legend_of_Zelda_Breath_of_the_Wild.jpg?width=250",
+          "average_playtime": "50+ hours",
+          "platforms": ["Nintendo Switch", "Wii U"],
+          "release_date": "2017-03-03",
+          "reviews": {
+            "IGN": "10/10",
+            "Metacritic": "97/100"
           }
         }
       ]
@@ -568,10 +715,9 @@
           "name": "It Takes Two",
           "developer": "Hazelight Studios",
           "publisher": "Electronic Arts",
+          "most_played": 85,
           "description": "A cooperative adventure where two players must work together to overcome a variety of challenges and save a broken relationship.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=OhV5r2RGz6I"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=OhV5r2RGz6I"],
           "trailer_preview": "https://www.youtube.com/watch?v=OhV5r2RGz6I",
           "prices": {
             "Steam": "$39.99",
@@ -579,13 +725,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/80199_It_Takes_Two.jpg?width=250",
           "average_playtime": "10-12 hours",
-          "platforms": [
-            "PC",
-            "PS4",
-            "PS5",
-            "Xbox One",
-            "Xbox Series X|S"
-          ],
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2021-03-26",
           "reviews": {
             "IGN": "9.0/10",
@@ -597,10 +737,9 @@
           "name": "God of War",
           "developer": "Santa Monica Studio",
           "publisher": "Sony Interactive Entertainment",
+          "most_played": 95,
           "description": "Embark on a journey with Kratos and his son Atreus in this action-packed adventure inspired by Norse mythology.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=2yF0XZJtlRY"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=2yF0XZJtlRY"],
           "trailer_preview": "https://www.youtube.com/watch?v=2yF0XZJtlRY",
           "prices": {
             "PlayStation Store": "$19.99",
@@ -608,11 +747,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/38050_God_of_War.jpg?width=250",
           "average_playtime": "20-25 hours",
-          "platforms": [
-            "PC",
-            "PS4",
-            "PS5"
-          ],
+          "platforms": ["PC", "PS4", "PS5"],
           "release_date": "2018-04-20",
           "reviews": {
             "IGN": "10/10",
@@ -624,10 +759,9 @@
           "name": "The Witcher 3: Wild Hunt",
           "developer": "CD Projekt Red",
           "publisher": "CD Projekt",
+          "most_played": 92,
           "description": "Follow Geralt of Rivia, a monster hunter, as he searches for his missing adopted daughter in a richly detailed fantasy world.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=c0i88t0Kacs"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=c0i88t0Kacs"],
           "trailer_preview": "https://www.youtube.com/watch?v=c0i88t0Kacs",
           "prices": {
             "Steam": "$39.99",
@@ -635,13 +769,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/10270_The_Witcher_3_Wild_Hunt.jpg?width=250",
           "average_playtime": "50+ hours",
-          "platforms": [
-            "PC",
-            "PS4",
-            "PS5",
-            "Xbox One",
-            "Nintendo Switch"
-          ],
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Nintendo Switch"],
           "release_date": "2015-05-19",
           "reviews": {
             "IGN": "9.3/10",
@@ -653,10 +781,9 @@
           "name": "Assassin's Creed IV: Black Flag",
           "developer": "Ubisoft Montreal",
           "publisher": "Ubisoft",
+          "most_played": 80,
           "description": "Sail the high seas as Edward Kenway, a pirate and assassin, in a story of betrayal, plunder, and the fight for freedom.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=ZfL4x1CWUnE"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=ZfL4x1CWUnE"],
           "trailer_preview": "https://www.youtube.com/watch?v=ZfL4x1CWUnE",
           "prices": {
             "Steam": "$19.99",
@@ -664,14 +791,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/Assassins_Creed_IV_-_Black_Flag_cover.jpg?width=250",
           "average_playtime": "20-25 hours",
-          "platforms": [
-            "PC",
-            "PS3",
-            "PS4",
-            "Xbox 360",
-            "Xbox One",
-            "Wii U"
-          ],
+          "platforms": ["PC", "PS3", "PS4", "Xbox 360", "Xbox One", "Wii U"],
           "release_date": "2013-10-29",
           "reviews": {
             "IGN": "8.5/10",
@@ -683,10 +803,9 @@
           "name": "Alan Wake",
           "developer": "Remedy Entertainment",
           "publisher": "Microsoft Game Studios",
+          "most_played": 70,
           "description": "Step into the shoes of a troubled writer as he unravels a mystery shrouded in darkness in this psychological thriller.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=xgdhI-pT74I"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=xgdhI-pT74I"],
           "trailer_preview": "https://www.youtube.com/watch?v=xgdhI-pT74I",
           "prices": {
             "Steam": "$14.99",
@@ -694,15 +813,115 @@
           },
           "cover_image": "https://howlongtobeat.com/games/Alan-wake-0.jpg?width=250",
           "average_playtime": "11 hours",
-          "platforms": [
-            "PC",
-            "Xbox 360"
-          ],
+          "platforms": ["PC", "Xbox 360"],
           "release_date": "2010-05-14",
           "reviews": {
             "IGN": "9.0/10",
             "Vandal": "8.8/10",
             "Metacritic": "83/100"
+          }
+        },
+        {
+          "name": "Red Dead Redemption 2",
+          "developer": "Rockstar Games",
+          "publisher": "Rockstar Games",
+          "most_played": 98,
+          "description": "An epic tale of life in America’s unforgiving heartland. Follow Arthur Morgan and the Van der Linde gang as they struggle to survive.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=eaW0tYpxyp0"],
+          "trailer_preview": "https://www.youtube.com/watch?v=eaW0tYpxyp0",
+          "prices": {
+            "Steam": "$59.99",
+            "PlayStation Store": "$59.99"
+          },
+          "cover_image": "https://howlongtobeat.com/games/27045_Red_Dead_Redemption_II.jpg?width=250",
+          "average_playtime": "80+ hours",
+          "platforms": ["PC", "PS4", "Xbox One"],
+          "release_date": "2018-10-26",
+          "reviews": {
+            "IGN": "10/10",
+            "Metacritic": "97/100"
+          }
+        },
+        {
+          "name": "The Last of Us Part II",
+          "developer": "Naughty Dog",
+          "publisher": "Sony Interactive Entertainment",
+          "most_played": 90,
+          "description": "A gripping story of revenge and redemption in a post-apocalyptic world. Follow Ellie on her journey through danger and despair.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=btmN-bWwv0A"],
+          "trailer_preview": "https://www.youtube.com/watch?v=btmN-bWwv0A",
+          "prices": {
+            "PlayStation Store": "$69.99"
+          },
+          "cover_image": "https://howlongtobeat.com/games/65153_The_Last_of_Us_Part_II.jpg?width=250",
+          "average_playtime": "25 hours",
+          "platforms": ["PS4", "PS5"],
+          "release_date": "2020-06-19",
+          "reviews": {
+            "IGN": "10/10",
+            "Metacritic": "93/100"
+          }
+        },
+        {
+          "name": "Horizon Zero Dawn",
+          "developer": "Guerrilla Games",
+          "publisher": "Sony Interactive Entertainment",
+          "most_played": 88,
+          "description": "Explore a post-apocalyptic world overrun by robotic creatures. Uncover the secrets of the past and fight to save humanity.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=wzx96gYA8ek"],
+          "trailer_preview": "https://www.youtube.com/watch?v=wzx96gYA8ek",
+          "prices": {
+            "Steam": "$49.99",
+            "PlayStation Store": "$19.99"
+          },
+          "cover_image": "https://howlongtobeat.com/games/38049_Horizon_Zero_Dawn.jpg?width=250",
+          "average_playtime": "30 hours",
+          "platforms": ["PC", "PS4"],
+          "release_date": "2017-02-28",
+          "reviews": {
+            "IGN": "9.3/10",
+            "Metacritic": "89/100"
+          }
+        },
+        {
+          "name": "Uncharted 4: A Thief's End",
+          "developer": "Naughty Dog",
+          "publisher": "Sony Interactive Entertainment",
+          "most_played": 85,
+          "description": "Join Nathan Drake on his final adventure as he searches for lost treasure and confronts his past.",
+          "tutorial_links": ["https://www.youtube.com/watch?v/hh5HV4iic1Y"],
+          "trailer_preview": "https://www.youtube.com/watch?v=hh5HV4iic1Y",
+          "prices": {
+            "PlayStation Store": "$19.99"
+          },
+          "cover_image": "https://howlongtobeat.com/games/38048_Uncharted_4_A_Thiefs_End.jpg?width=250",
+          "average_playtime": "15 hours",
+          "platforms": ["PS4", "PS5"],
+          "release_date": "2016-05-10",
+          "reviews": {
+            "IGN": "9.0/10",
+            "Metacritic": "93/100"
+          }
+        },
+        {
+          "name": "Life is Strange: True Colors",
+          "developer": "Deck Nine",
+          "publisher": "Square Enix",
+          "most_played": 75,
+          "description": "A narrative-driven adventure where Alex Chen uses her supernatural empathy to uncover the truth behind her brother’s death.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=5s4s9hA4q7k"],
+          "trailer_preview": "https://www.youtube.com/watch?v=5s4s9hA4q7k",
+          "prices": {
+            "Steam": "$59.99",
+            "PlayStation Store": "$59.99"
+          },
+          "cover_image": "https://howlongtobeat.com/games/103436_Life_is_Strange_True_Colors.jpg?width=250",
+          "average_playtime": "10 hours",
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
+          "release_date": "2021-09-10",
+          "reviews": {
+            "IGN": "8.0/10",
+            "Metacritic": "81/100"
           }
         }
       ]
@@ -714,10 +933,9 @@
           "name": "Call of Duty: Black Ops 3",
           "developer": "Treyarch",
           "publisher": "Activision",
+          "most_played": 85,
           "description": "A futuristic first-person shooter with a gripping campaign, competitive multiplayer, and an extensive Zombies mode.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=Z_mDdrHcAr4"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=Z_mDdrHcAr4"],
           "trailer_preview": "https://www.youtube.com/watch?v=Z_mDdrHcAr4",
           "prices": {
             "Steam": "$59.99",
@@ -725,11 +943,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/COD_Black_Ops_3.jpg?width=250",
           "average_playtime": "12-15 hours",
-          "platforms": [
-            "PC",
-            "PS4",
-            "Xbox One"
-          ],
+          "platforms": ["PC", "PS4", "Xbox One"],
           "release_date": "2015-11-06",
           "reviews": {
             "IGN": "9.2/10",
@@ -741,10 +955,9 @@
           "name": "Call of Duty: Black Ops 2",
           "developer": "Treyarch",
           "publisher": "Activision",
+          "most_played": 80,
           "description": "A groundbreaking Call of Duty game featuring branching storylines, futuristic weapons, and intense multiplayer modes.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=x3tedlWs1XY"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=x3tedlWs1XY"],
           "trailer_preview": "https://www.youtube.com/watch?v=x3tedlWs1XY",
           "prices": {
             "Steam": "$59.99",
@@ -752,11 +965,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/275px-Call_of_Duty_Black_Ops_II_Game_Cover.png?width=250",
           "average_playtime": "10-12 hours",
-          "platforms": [
-            "PC",
-            "PS3",
-            "Xbox 360"
-          ],
+          "platforms": ["PC", "PS3", "Xbox 360"],
           "release_date": "2012-11-12",
           "reviews": {
             "IGN": "8.5/10",
@@ -768,10 +977,9 @@
           "name": "Call of Duty: Black Ops",
           "developer": "Treyarch",
           "publisher": "Activision",
+          "most_played": 75,
           "description": "A gritty, Cold War-era shooter with a captivating campaign, beloved multiplayer, and the start of the Zombies phenomenon.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=OPTOVQFRggI"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=OPTOVQFRggI"],
           "trailer_preview": "https://www.youtube.com/watch?v=OPTOVQFRggI",
           "prices": {
             "Steam": "$39.99",
@@ -779,11 +987,7 @@
           },
           "cover_image": "https://howlongtobeat.com/games/1471_Call_of_Duty_Black_Ops.jpg?width=250",
           "average_playtime": "7-10 hours",
-          "platforms": [
-            "PC",
-            "PS3",
-            "Xbox 360"
-          ],
+          "platforms": ["PC", "PS3", "Xbox 360"],
           "release_date": "2010-11-09",
           "reviews": {
             "IGN": "9.0/10",
@@ -795,23 +999,16 @@
           "name": "XDefiant",
           "developer": "Ubisoft San Francisco",
           "publisher": "Ubisoft",
+          "most_played": 65,
           "description": "A free-to-play arena shooter combining fast-paced gunplay with faction-based abilities inspired by Ubisoft franchises.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=4vIGEWyO2sM"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=4vIGEWyO2sM"],
           "trailer_preview": "https://www.youtube.com/watch?v=4vIGEWyO2sM",
           "prices": {
             "Ubisoft Store": "Free-to-play"
           },
           "cover_image": "https://howlongtobeat.com/games/127243_XDefiant.jpg?width=250",
           "average_playtime": "Varies",
-          "platforms": [
-            "PC",
-            "PS4",
-            "PS5",
-            "Xbox One",
-            "Xbox Series X|S"
-          ],
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2024-08-15",
           "reviews": {
             "IGN": "7.8/10",
@@ -823,10 +1020,9 @@
           "name": "Halo Infinite",
           "developer": "343 Industries",
           "publisher": "Xbox Game Studios",
+          "most_played": 90,
           "description": "Step into the boots of Master Chief and take on a new enemy in this expansive and visually stunning sci-fi shooter.",
-          "tutorial_links": [
-            "https://www.youtube.com/watch?v=PyMlV5_HRWk"
-          ],
+          "tutorial_links": ["https://www.youtube.com/watch?v=PyMlV5_HRWk"],
           "trailer_preview": "https://www.youtube.com/watch?v=PyMlV5_HRWk",
           "prices": {
             "Steam": "$59.99",
@@ -834,16 +1030,113 @@
           },
           "cover_image": "https://howlongtobeat.com/games/57454_Halo_Infinite.jpg?width=250",
           "average_playtime": "10-15 hours",
-          "platforms": [
-            "PC",
-            "Xbox One",
-            "Xbox Series X|S"
-          ],
+          "platforms": ["PC", "Xbox One", "Xbox Series X|S"],
           "release_date": "2021-12-08",
           "reviews": {
             "IGN": "9.0/10",
             "Vandal": "9.2/10",
             "Metacritic": "80/100"
+          }
+        },
+        {
+          "name": "Valorant",
+          "developer": "Riot Games",
+          "publisher": "Riot Games",
+          "most_played": 100,
+          "description": "A tactical 5v5 character-based shooter where precise gunplay meets unique agent abilities. Free-to-play and highly competitive.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=Gbtuh76GD-0"],
+          "trailer_preview": "https://www.youtube.com/watch?v=Gbtuh76GD-0",
+          "prices": {
+            "Riot Client": "Free-to-play"
+          },
+          "cover_image": "https://howlongtobeat.com/games/98725_Valorant.jpg?width=250",
+          "average_playtime": "500+ hours",
+          "platforms": ["PC"],
+          "release_date": "2020-06-02",
+          "reviews": {
+            "IGN": "9.0/10",
+            "Metacritic": "80/100"
+          }
+        },
+        {
+          "name": "Counter-Strike 2",
+          "developer": "Valve",
+          "publisher": "Valve",
+          "most_played": 98,
+          "description": "The next evolution of CS:GO. Experience modernized gameplay, realistic smoke mechanics, and upgraded visuals.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=5s4s9hA4q7k"],
+          "trailer_preview": "https://www.youtube.com/watch?v=5s4s9hA4q7k",
+          "prices": {
+            "Steam": "Free-to-play"
+          },
+          "cover_image": "https://howlongtobeat.com/games/127242_Counter-Strike_2.jpg?width=250",
+          "average_playtime": "1000+ hours",
+          "platforms": ["PC"],
+          "release_date": "2023-09-27",
+          "reviews": {
+            "IGN": "9.5/10",
+            "Metacritic": "85/100"
+          }
+        },
+        {
+          "name": "Apex Legends",
+          "developer": "Respawn Entertainment",
+          "publisher": "Electronic Arts",
+          "most_played": 95,
+          "description": "A hero-based battle royale with fast-paced combat, unique legends, and team-focused gameplay. Free-to-play and constantly evolving.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=oQtHENM_GZU"],
+          "trailer_preview": "https://www.youtube.com/watch?v=oQtHENM_GZU",
+          "prices": {
+            "Steam": "Free-to-play"
+          },
+          "cover_image": "https://howlongtobeat.com/games/54217_Apex_Legends.jpg?width=250",
+          "average_playtime": "300+ hours",
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Nintendo Switch"],
+          "release_date": "2019-02-04",
+          "reviews": {
+            "IGN": "9.0/10",
+            "Metacritic": "88/100"
+          }
+        },
+        {
+          "name": "Overwatch 2",
+          "developer": "Blizzard Entertainment",
+          "publisher": "Blizzard",
+          "most_played": 88,
+          "description": "A team-based hero shooter with 5v5 battles, new maps, and dynamic PvP modes. Free-to-play with seasonal content.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=GKXS_YA9s7E"],
+          "trailer_preview": "https://www.youtube.com/watch?v=GKXS_YA9s7E",
+          "prices": {
+            "Battle.net": "Free-to-play"
+          },
+          "cover_image": "https://howlongtobeat.com/games/103435_Overwatch_2.jpg?width=250",
+          "average_playtime": "200+ hours",
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
+          "release_date": "2022-10-04",
+          "reviews": {
+            "IGN": "8.0/10",
+            "Metacritic": "79/100"
+          }
+        },
+        {
+          "name": "Doom Eternal",
+          "developer": "id Software",
+          "publisher": "Bethesda Softworks",
+          "most_played": 85,
+          "description": "Rip and tear through hordes of demons in this ultra-fast-paced FPS. Master brutal combat and save humanity from Hell’s invasion.",
+          "tutorial_links": ["https://www.youtube.com/watch?v=FkklG9MA0vM"],
+          "trailer_preview": "https://www.youtube.com/watch?v=FkklG9MA0vM",
+          "prices": {
+            "Steam": "$39.99",
+            "PlayStation Store": "$39.99"
+          },
+          "cover_image": "https://howlongtobeat.com/games/65154_Doom_Eternal.jpg?width=250",
+          "average_playtime": "18 hours",
+          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Nintendo Switch"],
+          "release_date": "2020-03-20",
+          "reviews": {
+            "IGN": "9.0/10",
+            "Metacritic": "87/100"
           }
         }
       ]
