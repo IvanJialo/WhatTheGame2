@@ -1107,7 +1107,7 @@
           "tutorial_links": ["https://www.youtube.com/watch?v=GKXS_YA9s7E"],
           "trailer_preview": "https://www.youtube.com/watch?v=GKXS_YA9s7E",
           "prices": {
-            "Battle.net": "Free-to-play"
+            "BattleNet": "Free-to-play"
           },
           "cover_image": "https://howlongtobeat.com/games/103435_Overwatch_2.jpg?width=250",
           "average_playtime": "200+ hours",
@@ -1230,7 +1230,7 @@
           ],
           "trailer_preview": "https://www.youtube.com/watch?v=eLEwNoRV88w",
           "prices": {
-            "Battle.net": "Free-to-play"
+            "BattleNet": "Free-to-play"
           },
           "cover_image": "https://example.com/hots-cover.jpg",
           "average_playtime": "200+ horas",
@@ -1414,7 +1414,7 @@
           ],
           "trailer_preview": "https://www.youtube.com/watch?v=3O6vAyn7jAE",
           "prices": {
-            "Battle.net": "$14.99/month (subscription)"
+            "BattleNet": "$14.99/month (subscription)"
           },
           "cover_image": "https://example.com/wow-cover.jpg",
           "average_playtime": "2000+ horas",
@@ -1757,7 +1757,7 @@
           ],
           "trailer_preview": "https://www.youtube.com/watch?v=0E44DClsX5Q",
           "prices": {
-            "Battle.net": "Free-to-play"
+            "BattleNet": "Free-to-play"
           },
           "cover_image": "https://example.com/warzone-cover.jpg",
           "average_playtime": "350+ horas",
