@@ -150,7 +150,7 @@
             "Steam": "$59.99",
             "PlayStation Store": "$59.99"
           },
-          "cover_image": "https://example.com/f1-23-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/128162_F1_23.jpg?width=250",
           "average_playtime": "50 hours",
           "platforms": [
             "PC",
@@ -177,7 +177,7 @@
             "Steam": "$29.99",
             "PlayStation Store": "$29.99"
           },
-          "cover_image": "https://example.com/burnout-paradise-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/BurnoutParadiseTheUltimateBox.jpg?width=250",
           "average_playtime": "25 hours",
           "platforms": [
             "PC",
@@ -204,7 +204,7 @@
             "Steam": "$59.99",
             "PlayStation Store": "$59.99"
           },
-          "cover_image": "https://example.com/dirt-rally-2-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/65104_Dirt_Rally_20.jpeg?width=250",
           "average_playtime": "30 hours",
           "platforms": [
             "PC",
@@ -231,7 +231,7 @@
             "Steam": "$19.99",
             "PlayStation Store": "$19.99"
           },
-          "cover_image": "https://example.com/trackmania-turbo-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/35764_TrackMania_Turbo.jpg?width=250",
           "average_playtime": "20 hours",
           "platforms": [
             "PC",
@@ -257,7 +257,7 @@
           "prices": {
             "PlayStation Store": "$19.99"
           },
-          "cover_image": "https://example.com/wipeout-omega-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/46335_Wipeout_Omega_Collection.jpg?width=250",
           "average_playtime": "15 hours",
           "platforms": [
             "PS4"
@@ -395,7 +395,7 @@
             "Steam": "$59.99",
             "PlayStation Store": "$59.99"
           },
-          "cover_image": "https://example.com/madden-nfl-23-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/110803_Madden_NFL_23.jpg?width=250",
           "average_playtime": "40 hours",
           "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2022-08-19",
@@ -416,7 +416,7 @@
             "PlayStation Store": "$69.99",
             "Xbox Store": "$69.99"
           },
-          "cover_image": "https://example.com/mlb-the-show-23-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/124830_MLB_The_Show_23.jfif?width=250",
           "average_playtime": "35 hours",
           "platforms": ["PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2023-03-28",
@@ -437,7 +437,7 @@
             "Steam": "$39.99",
             "PlayStation Store": "$39.99"
           },
-          "cover_image": "https://example.com/tony-hawk-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/78213_Tony_Hawks_Pro_Skater_1__2.jpg?width=250",
           "average_playtime": "20 hours",
           "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2020-09-04",
@@ -458,7 +458,7 @@
             "Steam": "$59.99",
             "PlayStation Store": "$59.99"
           },
-          "cover_image": "https://example.com/pga-tour-2k23-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/114785_PGA_Tour_2K23.jpg?width=250",
           "average_playtime": "30 hours",
           "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2022-10-14",
@@ -479,7 +479,7 @@
             "Steam": "$59.99",
             "PlayStation Store": "$59.99"
           },
-          "cover_image": "https://example.com/wwe-2k23-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/125521_WWE_2K23.jpg?width=250",
           "average_playtime": "25 hours",
           "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2023-03-17",
@@ -615,7 +615,7 @@
             "Steam": "$59.99",
             "PlayStation Store": "$59.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/27045_Red_Dead_Redemption_II.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/27100_Red_Dead_Redemption_2.jpg?width=250",
           "average_playtime": "80+ hours",
           "platforms": ["PC", "PS4", "Xbox One"],
           "release_date": "2018-10-26",
@@ -656,7 +656,7 @@
           "prices": {
             "PlayStation Store": "$69.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/81848_Horizon_Forbidden_West.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/79775_Horizon_Forbidden_West.jpg?width=250",
           "average_playtime": "30 hours",
           "platforms": ["PS4", "PS5"],
           "release_date": "2022-02-18",
@@ -677,7 +677,7 @@
             "Steam": "$59.99",
             "Ubisoft Store": "$59.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/65152_Assassins_Creed_Valhalla.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/77729_Assassins_Creed_Valhalla.jpg?width=250",
           "average_playtime": "60+ hours",
           "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2020-11-10",
@@ -697,7 +697,7 @@
           "prices": {
             "Nintendo eShop": "$59.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/38051_The_Legend_of_Zelda_Breath_of_the_Wild.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/38019_The_Legend_of_Zelda_Breath_of_the_Wild.jpg?width=250",
           "average_playtime": "50+ hours",
           "platforms": ["Nintendo Switch", "Wii U"],
           "release_date": "2017-03-03",
@@ -833,7 +833,7 @@
             "Steam": "$59.99",
             "PlayStation Store": "$59.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/27045_Red_Dead_Redemption_II.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/27100_Red_Dead_Redemption_2.jpg?width=250",
           "average_playtime": "80+ hours",
           "platforms": ["PC", "PS4", "Xbox One"],
           "release_date": "2018-10-26",
@@ -853,7 +853,7 @@
           "prices": {
             "PlayStation Store": "$69.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/65153_The_Last_of_Us_Part_II.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/41753_The_Last_of_Us_Part_II.jpg?width=250",
           "average_playtime": "25 hours",
           "platforms": ["PS4", "PS5"],
           "release_date": "2020-06-19",
@@ -874,7 +874,7 @@
             "Steam": "$49.99",
             "PlayStation Store": "$19.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/38049_Horizon_Zero_Dawn.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/Horizon-Zero-Dawn-feat.jpg?width=250",
           "average_playtime": "30 hours",
           "platforms": ["PC", "PS4"],
           "release_date": "2017-02-28",
@@ -894,7 +894,7 @@
           "prices": {
             "PlayStation Store": "$19.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/38048_Uncharted_4_A_Thiefs_End.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/Uncharted_4_Reveal_Wallpaper.jpg?width=250",
           "average_playtime": "15 hours",
           "platforms": ["PS4", "PS5"],
           "release_date": "2016-05-10",
@@ -915,7 +915,7 @@
             "Steam": "$59.99",
             "PlayStation Store": "$59.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/103436_Life_is_Strange_True_Colors.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/89877_Life_is_Strange_True_Colors.jpg?width=250",
           "average_playtime": "10 hours",
           "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2021-09-10",
@@ -1049,7 +1049,7 @@
           "prices": {
             "Riot Client": "Free-to-play"
           },
-          "cover_image": "https://howlongtobeat.com/games/98725_Valorant.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/76906_Valorant.jpg?width=250",
           "average_playtime": "500+ hours",
           "platforms": ["PC"],
           "release_date": "2020-06-02",
@@ -1069,7 +1069,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://howlongtobeat.com/games/127242_Counter-Strike_2.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/1957_Counter-Strike_2.jpg?width=250",
           "average_playtime": "1000+ hours",
           "platforms": ["PC"],
           "release_date": "2023-09-27",
@@ -1089,7 +1089,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://howlongtobeat.com/games/54217_Apex_Legends.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/64753_Apex_Legends.jpg?width=250",
           "average_playtime": "300+ hours",
           "platforms": ["PC", "PS4", "PS5", "Xbox One", "Nintendo Switch"],
           "release_date": "2019-02-04",
@@ -1109,7 +1109,7 @@
           "prices": {
             "BattleNet": "Free-to-play"
           },
-          "cover_image": "https://howlongtobeat.com/games/103435_Overwatch_2.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/94137_Overwatch_2.jpg?width=250",
           "average_playtime": "200+ hours",
           "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X|S"],
           "release_date": "2022-10-04",
@@ -1130,7 +1130,7 @@
             "Steam": "$39.99",
             "PlayStation Store": "$39.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/65154_Doom_Eternal.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/57506_Doom_Eternal.jpg?width=250",
           "average_playtime": "18 hours",
           "platforms": ["PC", "PS4", "PS5", "Xbox One", "Nintendo Switch"],
           "release_date": "2020-03-20",
@@ -1157,7 +1157,7 @@
           "prices": {
             "Riot Client": "Free-to-play"
           },
-          "cover_image": "https://example.com/lol-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/5203_League_of_Legends.jpg?width=250",
           "average_playtime": "1000+ horas",
           "platforms": [
             "PC"
@@ -1181,7 +1181,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://example.com/dota2-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/250px-DotA2.jpg?width=250",
           "average_playtime": "800+ horas",
           "platforms": [
             "PC"
@@ -1205,7 +1205,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://example.com/smite-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/256px-SmiteVideoGame.jpg?width=250",
           "average_playtime": "300+ horas",
           "platforms": [
             "PC",
@@ -1232,7 +1232,7 @@
           "prices": {
             "BattleNet": "Free-to-play"
           },
-          "cover_image": "https://example.com/hots-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/heroes-of-the-storm.jpg?width=250",
           "average_playtime": "200+ horas",
           "platforms": [
             "PC"
@@ -1257,7 +1257,7 @@
             "App Store": "Free-to-play",
             "Google Play": "Free-to-play"
           },
-          "cover_image": "https://example.com/aov-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/51726_Arena_of_Valor.jpg?width=250",
           "average_playtime": "150+ horas",
           "platforms": [
             "Android",
@@ -1283,7 +1283,7 @@
           "prices": {
             "Google Play": "Free-to-play"
           },
-          "cover_image": "https://example.com/mlbb-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/61721_Mobile_legends.jpg?width=250",
           "average_playtime": "250+ horas",
           "platforms": [
             "Android",
@@ -1308,7 +1308,7 @@
           "prices": {
             "Nintendo eShop": "Free-to-play"
           },
-          "cover_image": "https://example.com/pokemon-unite-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/95887_Pokemon_Unite.jpg?width=250",
           "average_playtime": "100+ horas",
           "platforms": [
             "Nintendo Switch",
@@ -1334,7 +1334,7 @@
           "prices": {
             "App Store": "Free-to-play"
           },
-          "cover_image": "https://example.com/wildrift-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/86110_League_of_Legends_Wild_Rift.jpg?width=250",
           "average_playtime": "300+ horas",
           "platforms": [
             "Android",
@@ -1361,7 +1361,7 @@
           "prices": {
             "Google Play": "Free-to-play"
           },
-          "cover_image": "https://example.com/onmyoji-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/52819_Onmyoji.jpg?width=250",
           "average_playtime": "120+ horas",
           "platforms": [
             "Android",
@@ -1387,7 +1387,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://example.com/eternalreturn-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/85022_Eternal_Return_Black_Survival.jpg?width=250",
           "average_playtime": "80+ horas",
           "platforms": [
             "PC"
@@ -1416,7 +1416,7 @@
           "prices": {
             "BattleNet": "$14.99/month (subscription)"
           },
-          "cover_image": "https://example.com/wow-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/11286_World_of_Warcraft.png?width=250",
           "average_playtime": "2000+ horas",
           "platforms": [
             "PC"
@@ -1440,7 +1440,7 @@
           "prices": {
             "PlayStation Store": "$39.99 (base game) + $12.99/month"
           },
-          "cover_image": "https://example.com/ffxiv-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/12654_Final_Fantasy_XIV.jpg?width=250",
           "average_playtime": "1500+ horas",
           "platforms": [
             "PC",
@@ -1466,7 +1466,7 @@
           "prices": {
             "Steam": "Free-to-play (base game)"
           },
-          "cover_image": "https://example.com/gw2-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/4154_Guild_Wars_2.jpg?width=250",
           "average_playtime": "800+ horas",
           "platforms": [
             "PC"
@@ -1490,7 +1490,7 @@
           "prices": {
             "Steam": "$19.99 (base game) + optional ESO Plus"
           },
-          "cover_image": "https://example.com/eso-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/The_Elder_scrolls_online_logo.jpg?width=250",
           "average_playtime": "600+ horas",
           "platforms": [
             "PC",
@@ -1518,7 +1518,7 @@
           "prices": {
             "Steam": "$9.99 (base game)"
           },
-          "cover_image": "https://example.com/bdo-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/46467_Black_Desert_Online.jpg?width=250",
           "average_playtime": "500+ horas",
           "platforms": [
             "PC",
@@ -1544,7 +1544,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://example.com/lostark-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/26127_Lost_Ark.jpg?width=250",
           "average_playtime": "400+ horas",
           "platforms": [
             "PC"
@@ -1568,7 +1568,7 @@
           "prices": {
             "Steam": "Free-to-play (con suscripción opcional)"
           },
-          "cover_image": "https://example.com/swtor-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/220px-Star_Wars-_The_Old_Republic_cover.jpg?width=250",
           "average_playtime": "300+ horas",
           "platforms": [
             "PC"
@@ -1592,7 +1592,7 @@
           "prices": {
             "RuneScape Official": "Free-to-play (con membresía premium)"
           },
-          "cover_image": "https://example.com/runescape-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/8024_RuneScape.jpg?width=250",
           "average_playtime": "1000+ horas",
           "platforms": [
             "PC",
@@ -1617,7 +1617,7 @@
           "prices": {
             "Steam": "$39.99"
           },
-          "cover_image": "https://example.com/newworld-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/67832_New_World.jpg?width=250",
           "average_playtime": "200+ horas",
           "platforms": [
             "PC"
@@ -1641,7 +1641,7 @@
           "prices": {
             "Steam": "Free-to-play (con DLCs premium)"
           },
-          "cover_image": "https://example.com/destiny2-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/43894_Destiny_2.png?width=250",
           "average_playtime": "700+ horas",
           "platforms": [
             "PC",
@@ -1674,7 +1674,7 @@
           "prices": {
             "Epic Games Store": "Free-to-play"
           },
-          "cover_image": "https://example.com/fortnite-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/3657_Fortnite.jpg?width=250",
           "average_playtime": "500+ horas",
           "platforms": [
             "PC",
@@ -1703,7 +1703,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://example.com/pubg-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/44704_PlayerUnknowns_Battlegrounds.jpg?width=250",
           "average_playtime": "400+ horas",
           "platforms": [
             "PC",
@@ -1730,7 +1730,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://example.com/apex-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/64753_Apex_Legends.jpg?width=250",
           "average_playtime": "300+ horas",
           "platforms": [
             "PC",
@@ -1759,7 +1759,7 @@
           "prices": {
             "BattleNet": "Free-to-play"
           },
-          "cover_image": "https://example.com/warzone-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/75852_Call_of_Duty_Warzone.jpg?width=250",
           "average_playtime": "350+ horas",
           "platforms": [
             "PC",
@@ -1787,7 +1787,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://example.com/fallguys-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/68270_Fall_Guys.jpg?width=250",
           "average_playtime": "100+ horas",
           "platforms": [
             "PC",
@@ -1816,7 +1816,7 @@
           "prices": {
             "Steam": "$19.99"
           },
-          "cover_image": "https://example.com/naraka-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/72860_Naraka_Bladepoint.jpg?width=250",
           "average_playtime": "200+ horas",
           "platforms": [
             "PC",
@@ -1841,7 +1841,7 @@
           "prices": {
             "Epic Games Store": "Free-to-play"
           },
-          "cover_image": "https://example.com/spellbreak-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/67805_Spellbreak.jpg?width=250",
           "average_playtime": "80+ horas",
           "platforms": [
             "PC",
@@ -1868,7 +1868,7 @@
           "prices": {
             "Ubisoft Store": "Free-to-play"
           },
-          "cover_image": "https://example.com/hyperscape-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/81731_Hyper_Scape.jpg?width=250",
           "average_playtime": "60+ horas",
           "platforms": [
             "PC",
@@ -1894,7 +1894,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://example.com/realmroyale-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/57276_Realm_Royale.jpg?width=250",
           "average_playtime": "120+ horas",
           "platforms": [
             "PC",
@@ -1921,7 +1921,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://example.com/superanimalroyale-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/65042_Super_Animal_Royale.jpg?width=250",
           "average_playtime": "50+ horas",
           "platforms": [
             "PC",
@@ -1953,7 +1953,7 @@
           "prices": {
             "Nintendo eShop": "$4.99"
           },
-          "cover_image": "https://example.com/supermariobros-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/9371_Super_Mario_Bros.png?width=250",
           "average_playtime": "5 horas",
           "platforms": [
             "NES",
@@ -1979,7 +1979,7 @@
           "prices": {
             "Nintendo eShop": "$7.99"
           },
-          "cover_image": "https://example.com/linktothepast-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/10028_The_Legend_of_Zelda_A_Link_to_the_Past.jpg?width=250",
           "average_playtime": "20 horas",
           "platforms": [
             "SNES",
@@ -2005,7 +2005,7 @@
           "prices": {
             "Steam": "$2.99"
           },
-          "cover_image": "https://example.com/sonic2-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/8788_Sonic_the_Hedgehog_2.jpg?width=250",
           "average_playtime": "4 horas",
           "platforms": [
             "Sega Genesis",
@@ -2032,7 +2032,7 @@
           "prices": {
             "Nintendo eShop": "$7.99"
           },
-          "cover_image": "https://example.com/streetfighter2-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/9238_Street_Fighter_II.png?width=250",
           "average_playtime": "10+ horas",
           "platforms": [
             "Arcade",
@@ -2058,7 +2058,7 @@
           "prices": {
             "Nintendo eShop": "$4.99"
           },
-          "cover_image": "https://example.com/pacman-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/Pac-Man.JPG?width=250",
           "average_playtime": "1 hora (pero infinitamente rejugable)",
           "platforms": [
             "Arcade",
@@ -2084,7 +2084,7 @@
           "prices": {
             "Nintendo eShop": "$7.99"
           },
-          "cover_image": "https://example.com/dkc-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/2686_Donkey_Kong_Country.png?width=250",
           "average_playtime": "8 horas",
           "platforms": [
             "SNES",
@@ -2110,7 +2110,7 @@
           "prices": {
             "Nintendo eShop": "$4.99"
           },
-          "cover_image": "https://example.com/megaman2-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/250px-Megaman2_box.jpg?width=250",
           "average_playtime": "6 horas",
           "platforms": [
             "NES",
@@ -2135,7 +2135,7 @@
           "prices": {
             "Nintendo eShop": "$4.99"
           },
-          "cover_image": "https://example.com/tetris-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/9715_Tetris.jpg?width=250",
           "average_playtime": "Infinity (es adictivo)",
           "platforms": [
             "Game Boy",
@@ -2161,7 +2161,7 @@
           "prices": {
             "Nintendo eShop": "$14.99"
           },
-          "cover_image": "https://example.com/ff6-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/3519_Final_Fantasy_VI.jpg?width=250",
           "average_playtime": "40 horas",
           "platforms": [
             "SNES",
@@ -2187,7 +2187,7 @@
           "prices": {
             "Nintendo eShop": "$14.99"
           },
-          "cover_image": "https://example.com/chronotrigger-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/Chrono_Trigger.jpg?width=250",
           "average_playtime": "25 horas",
           "platforms": [
             "SNES",
@@ -2218,7 +2218,7 @@
           "prices": {
             "Steam": "$59.99"
           },
-          "cover_image": "https://example.com/hlalyx-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/72067_Half-Life_Alyx.jpg?width=250",
           "average_playtime": "15 horas",
           "platforms": [
             "PC VR"
@@ -2242,7 +2242,7 @@
           "prices": {
             "Steam": "$29.99"
           },
-          "cover_image": "https://example.com/beatsaber-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/56377_Beat_Saber.jpg?width=250",
           "average_playtime": "20+ horas",
           "platforms": [
             "PC VR",
@@ -2268,7 +2268,7 @@
           "prices": {
             "Steam": "$24.99"
           },
-          "cover_image": "https://example.com/superhotvr-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/42418_Superhot_VR.jpg?width=250",
           "average_playtime": "3 horas (pero muy rejugable)",
           "platforms": [
             "PC VR",
@@ -2294,7 +2294,7 @@
           "prices": {
             "Steam": "$39.99"
           },
-          "cover_image": "https://example.com/twd-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/74072_The_Walking_Dead_Saints_&_Sinners.jpg?width=250",
           "average_playtime": "15 horas",
           "platforms": [
             "PC VR",
@@ -2320,7 +2320,7 @@
           "prices": {
             "Steam": "$29.99"
           },
-          "cover_image": "https://example.com/boneworks-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/69535_BONEWORKS.jpg?width=250",
           "average_playtime": "8 horas",
           "platforms": [
             "PC VR"
@@ -2344,7 +2344,7 @@
           "prices": {
             "Steam": "$24.99"
           },
-          "cover_image": "https://example.com/pistolwhip-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/68279_Pistol_Whip.jpg?width=250",
           "average_playtime": "10+ horas",
           "platforms": [
             "PC VR",
@@ -2370,7 +2370,7 @@
           "prices": {
             "Oculus Store": "$39.99"
           },
-          "cover_image": "https://example.com/re4vr-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/91167_Resident_Evil_4_VR.jpg?width=250",
           "average_playtime": "12 horas",
           "platforms": [
             "Oculus Quest"
@@ -2394,7 +2394,7 @@
           "prices": {
             "Steam": "$29.99"
           },
-          "cover_image": "https://example.com/moss-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/48441_Moss.jpg?width=250",
           "average_playtime": "4 horas",
           "platforms": [
             "PC VR",
@@ -2420,7 +2420,7 @@
           "prices": {
             "Steam": "Free-to-play"
           },
-          "cover_image": "https://example.com/vrchat-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/43639_VrChat.jpg?width=250",
           "average_playtime": "Infinity (es un mundo social)",
           "platforms": [
             "PC VR",
@@ -2445,7 +2445,7 @@
           "prices": {
             "Oculus Store": "$39.99"
           },
-          "cover_image": "https://example.com/loneecho-cover.jpg",
+          "cover_image": "https://howlongtobeat.com/games/47858_Lone_Echo.jpg?width=250",
           "average_playtime": "6 horas",
           "platforms": [
             "Oculus Rift"
