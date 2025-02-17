@@ -20,8 +20,7 @@ const loadDataFromFirebase = () => {
 
     if (data) {
       dataGame.categories = Object.values(data).flatMap((category) => category.games)
-        .sort((a, b) => new Date(b.release_date) - new Date(a.release_date))
-        .slice(0, 30); // Convertir objeto a array, ordenar por release_date y tomar los primeros 30
+        .sort((a, b) => new Date(b.release_date) - new Date(a.release_date)); // Convertir objeto a array, ordenar por release_date y tomar los primeros 30
     } else {
       dataGame.categories = []; // Si no hay datos, inicializa un array vacío
     }
