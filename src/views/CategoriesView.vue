@@ -32,7 +32,10 @@ const loadDataFromFirebase = () => {
     const data = snapshot.val(); // Obtiene los datos
 
     if (data) {
-      dataGame.categories = Object.values(data); // Convertir objeto a array
+      dataGame.categories = Object.values(data).map((category) => ({
+        category: category.category,
+        games: category.games.slice(0, 5), // Tomar solo los primeros 5 juegos
+      }));
     } else {
       dataGame.categories = []; // Si no hay datos, inicializa un array vacío
     }
@@ -44,3 +47,4 @@ onMounted(() => {
   loadDataFromFirebase();
 });
 </script>
+
