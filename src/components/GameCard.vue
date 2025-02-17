@@ -33,7 +33,6 @@ defineProps({
         </p>
         <!-- Mostrar más detalles del juego -->
         <div class="mt-4">
-          <p class="text-sm"><strong>Desarrollador:</strong> {{ game.developer }}</p>
           <p class="text-sm"><strong>Plataformas:</strong> {{ game.platforms.join(", ") }}</p>
           <p class="text-sm"><strong>Lanzamiento:</strong> {{ game.release_date }}</p>
         </div>
