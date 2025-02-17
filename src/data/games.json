@@ -604,45 +604,45 @@
           }
         },
         {
-          "name": "Red Dead Redemption 2",
-          "developer": "Rockstar Games",
-          "publisher": "Rockstar Games",
-          "most_played": 95,
-          "description": "An epic tale of life in America’s unforgiving heartland. Explore vast landscapes, hunt, and survive in the Wild West.",
+          "name": "Ghost of Tsushima",
+          "developer": "Sucker Punch Productions",
+          "publisher": "Sony Interactive Entertainment",
+          "most_played": 91,
+          "description": "In the late 13th century, the Mongol empire has laid waste to entire nations along their campaign to conquer the East. Tsushima Island is all that stands between.",
           "tutorial_links": ["https://www.youtube.com/watch?v=eaW0tYpxyp0"],
           "trailer_preview": "https://www.youtube.com/watch?v=eaW0tYpxyp0",
           "prices": {
             "Steam": "$59.99",
             "PlayStation Store": "$59.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/27100_Red_Dead_Redemption_2.jpg?width=250",
-          "average_playtime": "80+ hours",
-          "platforms": ["PC", "PS4", "Xbox One"],
-          "release_date": "2018-10-26",
+          "cover_image": "https://howlongtobeat.com/games/51225_Ghost_of_Tsushima.jpg?width=250",
+          "average_playtime": "50+ hours",
+          "platforms": ["PC", "PS4", "PS5"],
+          "release_date": "2020-07-17",
           "reviews": {
-            "IGN": "10/10",
-            "Metacritic": "97/100"
+            "IGN": "9/10",
+            "Metacritic": "87/100"
           }
         },
         {
-          "name": "The Witcher 3: Wild Hunt",
-          "developer": "CD Projekt Red",
-          "publisher": "CD Projekt",
+          "name": "Starfield",
+          "developer": "Bethesda Game Studios",
+          "publisher": "Bethesda Softworks",
           "most_played": 92,
-          "description": "Hunt monsters and explore a sprawling open world in this award-winning RPG. Choices matter in Geralt’s epic journey.",
+          "description": "Starfield is the first new universe in 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4.",
           "tutorial_links": ["https://www.youtube.com/watch?v=c0i88t0Kacs"],
           "trailer_preview": "https://www.youtube.com/watch?v=c0i88t0Kacs",
           "prices": {
-            "Steam": "$39.99",
-            "GOG": "$29.99"
+            "Steam": "$69.99",
+            "Xbox Store": "$79.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/10270_The_Witcher_3_Wild_Hunt.jpg?width=250",
-          "average_playtime": "100+ hours",
-          "platforms": ["PC", "PS4", "Xbox One", "Nintendo Switch"],
-          "release_date": "2015-05-19",
+          "cover_image": "https://howlongtobeat.com/games/57445_Starfield.jpg?width=250",
+          "average_playtime": "120+ hours",
+          "platforms": ["PC", "Xbox Series X|S"],
+          "release_date": "2023-09-05",
           "reviews": {
-            "IGN": "9.3/10",
-            "Metacritic": "93/100"
+            "IGN": "7/10",
+            "Metacritic": "85/100"
           }
         },
         {
@@ -1079,19 +1079,21 @@
           }
         },
         {
-          "name": "Apex Legends",
-          "developer": "Respawn Entertainment",
-          "publisher": "Electronic Arts",
-          "most_played": 95,
-          "description": "A hero-based battle royale with fast-paced combat, unique legends, and team-focused gameplay. Free-to-play and constantly evolving.",
+          "name": "Call of Duty",
+          "developer": "Infinity Ward",
+          "publisher": "Activision, Aspyr",
+          "most_played": 83,
+          "description": "Call of Duty delivers the gritty realism and cinematic intensity of World War II's epic battlefield moments like never before - through the eyes of citizen soldiers.",
           "tutorial_links": ["https://www.youtube.com/watch?v=oQtHENM_GZU"],
           "trailer_preview": "https://www.youtube.com/watch?v=oQtHENM_GZU",
           "prices": {
-            "Steam": "Free-to-play"
+            "Steam": "$19.99",
+            "Xbox Store": "$19.99",
+            "PlayStation Store":"$19.99"
           },
-          "cover_image": "https://howlongtobeat.com/games/64753_Apex_Legends.jpg?width=250",
+          "cover_image": "https://howlongtobeat.com/games/Codbox.jpg?width=250",
           "average_playtime": "300+ hours",
-          "platforms": ["PC", "PS4", "PS5", "Xbox One", "Nintendo Switch"],
+          "platforms": ["PC", "PS3", "Xbox 360", "Mac", "N-Gage"],
           "release_date": "2019-02-04",
           "reviews": {
             "IGN": "9.0/10",
