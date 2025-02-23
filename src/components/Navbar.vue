@@ -80,7 +80,7 @@ const showMobileMenu = ref(false);
 
         <!-- Menú móvil toggle -->
         <button @click="showMobileMenu = !showMobileMenu"
-          class="md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800">
+          class="md:hidden p-2 rounded-lg hover:bg-[#DCD0FF] dark:hover:bg-[#b197ff]">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
@@ -89,7 +89,7 @@ const showMobileMenu = ref(false);
 
       <!-- Menú móvil desplegable -->
       <div v-show="showMobileMenu"
-        class="md:hidden absolute top-16 inset-x-0 bg-white dark:bg-gray-900 border-b shadow-lg">
+        class="md:hidden absolute top-16 inset-x-0 bg-white/70 dark:bg-black/70 border-b shadow-lg">
         <div class="px-4 py-4 space-y-4">
           <nav>
             <ul class="space-y-4">
@@ -129,10 +129,10 @@ const showMobileMenu = ref(false);
           <div class="flex flex-col gap-4">
             <ToggleDarkLight />
             <div class="flex flex-col gap-2">
-              <a class="block text-center py-2.5 bg-[#DCD0FF] hover:bg-[#b197ff] rounded-md" href="#">
+              <a class="block text-center text-black font-medium py-2.5 bg-[#DCD0FF] hover:bg-[#b197ff] rounded-md" href="#">
                 Login
               </a>
-              <a class="block text-center py-2.5 bg-[#b197ff] hover:bg-[#DCD0FF] rounded-md" href="#">
+              <a class="block text-center text-black font-medium py-2.5 bg-[#b197ff] hover:bg-[#DCD0FF] rounded-md" href="#">
                 Register
               </a>
             </div>
