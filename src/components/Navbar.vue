@@ -11,13 +11,11 @@ const showMobileMenu = ref(false);
   <header
     class="fixed inset-x-0 top-0 z-50 border-b border-gray-500 bg-gray-100/60 backdrop-blur dark:border-gray-400 dark:bg-black/60">
     <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-4 px-4 sm:px-6 lg:px-8">
-      <!-- Logo responsive -->
       <div class="flex items-center flex-1 md:flex-none">
         <img alt="Logo" src="../assets/logo.png" class="h-12 w-auto hidden dark:block md:h-16" draggable="false" />
         <img alt="Logo" src="../assets/logo_dark.png" class="h-12 w-auto dark:hidden md:h-16" draggable="false" />
       </div>
 
-      <!-- Menú desktop -->
       <nav aria-label="Global" class="hidden md:flex flex-1 justify-left">
         <ul class="flex items-center gap-4 lg:gap-6 text-sm">
           <li>
@@ -55,7 +53,6 @@ const showMobileMenu = ref(false);
         </ul>
       </nav>
 
-      <!-- Contenedor derecho responsive -->
       <div class="flex items-center gap-4">
         <SearchInput class="hidden md:block w-full max-w-[200px] lg:max-w-[250px]" />
 
@@ -78,7 +75,6 @@ const showMobileMenu = ref(false);
           </div>
         </div>
 
-        <!-- Menú móvil toggle -->
         <button @click="showMobileMenu = !showMobileMenu"
           class="md:hidden p-2 rounded-lg hover:bg-[#DCD0FF] dark:hover:bg-[#b197ff]">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -87,13 +83,11 @@ const showMobileMenu = ref(false);
         </button>
       </div>
 
-      <!-- Menú móvil desplegable -->
       <div v-show="showMobileMenu"
         class="md:hidden absolute top-16 inset-x-0 bg-white/70 dark:bg-black/70 border-b shadow-lg">
         <div class="px-4 py-4 space-y-4">
           <nav>
             <ul class="space-y-4">
-              <!-- RouterLinks móviles -->
               <li>
                 <RouterLink class="block py-2 text-lg hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-4" to="/"
                   @click="showMobileMenu = false">
