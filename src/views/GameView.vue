@@ -11,7 +11,7 @@ const game = dataGame.categories
 </script>
 
 <template>
-  <div v-if="game" class="text-center max-w-3xl mx-auto px-4 py-8 pt-40 pb-28 bg-white/60 dark:bg-black/60 backdrop-blur rounded-lg shadow-lg">
+  <div v-if="game" class="text-center max-w-3xl mx-auto px-4 py-8 pt-40 pb-28 bg-white/60 dark:bg-black/60 backdrop-blur rounded-lg shadow-lg animate-blink">
     <img
       :src="game.cover_image"
       :alt="game.name"
