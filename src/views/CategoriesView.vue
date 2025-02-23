@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white/70 dark:bg-black/70">
+  <div class="bg-white/50 dark:bg-black/70">
     <!-- Itera sobre las categorías -->
     <div v-for="category in dataGame.categories" :key="category.category" class="text-center gap-16 m-20">
       <h2 class="text-2xl font-bold -mb-20">{{ category.category }}</h2>
