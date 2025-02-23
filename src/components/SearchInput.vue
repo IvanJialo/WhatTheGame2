@@ -7,7 +7,7 @@
         <ul v-if="filteredGames.length"
             class="absolute z-50 mt-2 w-full bg-white dark:bg-black rounded-lg shadow-lg max-h-60 overflow-y-auto ">
             <li v-for="game in filteredGames" :key="game.name" @click="selectGame(game)"
-                class="flex items-center gap-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer">
+                class="flex items-center gap-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-900 cursor-pointer">
                 <img :src="game.cover_image" alt="game.name" class="w-10 h-10 rounded-lg" />
                 <span>{{ game.name }}</span>
             </li>
