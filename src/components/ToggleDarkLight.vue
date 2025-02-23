@@ -1,6 +1,6 @@
 <template>
   <label for="theme-toggle"
-    class="relative inline-block h-6 w-12 cursor-pointer rounded-full bg-[#DCD0FF] transition [-webkit-tap-highlight-color:_transparent] hover:bg-[#b197ff]">
+    class="relative inline-block h-6 w-12 cursor-pointer rounded-full bg-[#DCD0FF] transition md:transition [-webkit-tap-highlight-color:_transparent] hover:bg-[#b197ff]">
     <input type="checkbox" id="theme-toggle" class="peer sr-only" v-model="isDarkTheme" />
 
     <span
@@ -12,22 +12,22 @@
   </label>
 </template>
 
-<script>
-document.documentElement.classList.add('dark')
-export default {
-  data() {
-    return {
-      isDarkTheme: true
-    }
-  },
-  watch: {
-    isDarkTheme(newValue) {
-      if (newValue) {
-        document.documentElement.classList.add('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
-      }
-    }
+<script setup>
+import { ref, onMounted, watch } from 'vue'
+
+const isDarkTheme = ref(true)
+
+onMounted(() => {
+  if (isDarkTheme.value) {
+    document.documentElement.classList.add('dark')
   }
-}
+
+  watch(isDarkTheme, (newValue) => {
+    if (newValue) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  })
+})
 </script>
