@@ -1,7 +1,9 @@
 <template>
     <div class="relative w-full max-w-md mx-auto">
         <input v-model="searchQuery" type="text" placeholder="Search for a game..." @input="debouncedSearch"
-            class="w-full p-3 border rounded-lg shadow-sm ring-magenta focus:outline-none focus:ring-2 focus:ring-magenta-500 text-black" />
+            class="w-full p-3 border rounded-lg shadow-sm ring-magenta focus:outline-none focus:ring-2 focus:ring-magenta-500 text-black"
+            style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNiMTk3ZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMyAxMGE3IDcgMCAxIDAgMTQgMGE3IDcgMCAxIDAtMTQgMG0xOCAxMWwtNi02Ii8+PC9zdmc+'); 
+            background-position: left 0.5rem center; background-repeat: no-repeat; padding-left: 2.5rem;" >
 
         <!-- Dropdown de sugerencias -->
         <ul v-if="filteredGames.length"
