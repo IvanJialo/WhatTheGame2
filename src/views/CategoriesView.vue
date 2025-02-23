@@ -14,30 +14,37 @@
 <script setup>
 import { ref as dbRef, onValue } from "firebase/database"; // Firebase
 import { database } from "../data/firebase"; // Configuración de Firebase
-import { onMounted, reactive } from "vue"; // Vue 3 Composition API
+import { onMounted, reactive, ref } from "vue"; // Vue 3 Composition API
 import GameCard from "../components/GameCard.vue"; // Componente GameCard
 
 // Estado reactivo para almacenar los datos del juego
 const dataGame = reactive({
   categories: [],
 });
+const randomGames = ref([]);
+const allGames = ref([]);
 
+const getRandomGames = () => {
+  const shuffled = [...allGames.value].sort(() => 0.5 - Math.random());
+  randomGames.value = shuffled.slice(0, 5);
+};
 // Método para cargar datos desde Firebase
 const loadDataFromFirebase = () => {
-  // Referencia a la ubicación en la base de datos
   const categoriesRef = dbRef(database, "categories");
 
-  // Escucha cambios en la base de datos
   onValue(categoriesRef, (snapshot) => {
-    const data = snapshot.val(); // Obtiene los datos
+    const data = snapshot.val();
 
     if (data) {
-      dataGame.categories = Object.values(data).map((category) => ({
-        category: category.category,
-        games: category.games.slice(0, 5), // Tomar solo los primeros 5 juegos
-      }));
+      dataGame.categories = Object.values(data).map((category) => {
+        const shuffledGames = category.games.sort(() => 0.5 - Math.random());
+        return {
+          category: category.category,
+          games: shuffledGames.slice(0, 5), // Tomar 5 juegos aleatorios
+        };
+      }); getRandomGames();
     } else {
-      dataGame.categories = []; // Si no hay datos, inicializa un array vacío
+      dataGame.categories = [];
     }
   });
 };
