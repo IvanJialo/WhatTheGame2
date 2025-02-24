@@ -1,13 +1,25 @@
 <script setup>
+import { ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import dataGame from '@/data/games.json';
 
 const route = useRoute();
-const gameName = route.params.id;
+const game = ref(null);
 
-const game = dataGame.categories
-  .flatMap(category => category.games)
-  .find(game => game.name === gameName);
+const findGame = (gameName) => {
+  return dataGame.categories
+    .flatMap(category => category.games)
+    .find(game => game.name === gameName);
+};
+
+game.value = findGame(route.params.id);
+
+watch(
+  () => route.params.id,
+  (newGameName) => {
+    game.value = findGame(newGameName);
+  }
+);
 </script>
 
 <template>
