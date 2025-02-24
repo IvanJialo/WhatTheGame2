@@ -1,6 +1,5 @@
 <template>
   <div class="bg-white/50 dark:bg-black/70">
-    <!-- Itera sobre las categorías -->
     <div 
       v-for="category in dataGame.categories" 
       :key="category.category" 
@@ -10,7 +9,6 @@
         {{ category.category }}
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 sm:gap-16 p-4 sm:m-36 sm:text-center">
-        <!-- Itera sobre los juegos de cada categoría -->
         <GameCard 
           v-for="game in category.games" 
           :key="game.name" 

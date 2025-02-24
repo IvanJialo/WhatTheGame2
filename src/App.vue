@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import Navbar from './components/Navbar.vue';
 import Footers from './components/Footer.vue';
 import BackToTop from './components/BackToTopButton.vue';
@@ -18,7 +18,7 @@ import './assets/backgroundballs.js';
 <style>
 .cuelpo {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   height: 100vh;
 }
 canvas {
