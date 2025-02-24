@@ -38,7 +38,7 @@ onMounted(() => {
     <div class="text-center gap-8 sm:gap-16 m-8 mt-24 sm:m-20">
       <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:-mb-20">Latest</h2>
       
-      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 sm:gap-16 p-4 sm:m-36">
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 sm:gap-16 2xl:gap-9 p-4 sm:m-36">
         <GameCard 
           v-for="game in dataGame.categories" 
           :key="game.name" 
