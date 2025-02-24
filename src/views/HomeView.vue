@@ -37,7 +37,7 @@ onMounted(() => {
 <template>
   <main class="bg-white/50 dark:bg-black/70">
     <HeroBanner class="animate-blurred-fade-in"/>
-    <SearchInput v-model="searchQuery" class="animate-blurred-fade-in mt-8 mb-44 sm:mt-16 lg:mt-20" />
+    <SearchInput v-model="searchQuery" class="animate-blurred-fade-in mt-8 max-w-[80%] sm:max-w-[60%] xl:max-w-[30%] mb-44 sm:mt-16 lg:mt-20" />
     
     <div class="text-center gap-8 sm:gap-16 m-8 sm:m-20 mt-32 sm:mt-64">
       <h2 class="text-2xl sm:text-3xl font-bold mb-8 sm:-mb-20">
