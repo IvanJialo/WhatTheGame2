@@ -7,8 +7,9 @@
             </div>
 
             <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-black dark:text-white">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
-                itaque neque.
+                This website allows you to search and discover games in a simple and fast way. We don't store
+                user information, we don't show you unnecessary ads, and we don't require you to register. We
+                want to help you find the perfect game for you!
             </p>
 
             <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
@@ -57,7 +58,7 @@
 
             <ul class="mt-12 flex justify-center gap-6 md:gap-8">
                 <li>
-                    <a href="#" rel="noreferrer" target="_blank"
+                    <a href="https://www.facebook.com/ivan.ja.501?locale=es_ES" rel="noreferrer" target="_blank"
                         class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
                         <span class="sr-only">Facebook</span>
                         <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -69,7 +70,7 @@
                 </li>
 
                 <li>
-                    <a href="#" rel="noreferrer" target="_blank"
+                    <a href="https://www.instagram.com/ivxn03_/?hl=es" rel="noreferrer" target="_blank"
                         class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
                         <span class="sr-only">Instagram</span>
                         <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -81,7 +82,7 @@
                 </li>
 
                 <li>
-                    <a href="#" rel="noreferrer" target="_blank"
+                    <a href="https://x.com/Ivxn03" rel="noreferrer" target="_blank"
                         class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
                         <span class="sr-only">Twitter</span>
                         <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -92,7 +93,7 @@
                 </li>
 
                 <li>
-                    <a href="#" rel="noreferrer" target="_blank"
+                    <a href="https://github.com/IvanJialo" rel="noreferrer" target="_blank"
                         class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
                         <span class="sr-only">GitHub</span>
                         <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -104,12 +105,12 @@
                 </li>
 
                 <li>
-                    <a href="#" rel="noreferrer" target="_blank"
+                    <a href="https://www.linkedin.com/in/iv%C3%A1n-jim%C3%A9nez-alonso-066967278/" rel="noreferrer" target="_blank"
                         class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
-                        <span class="sr-only">Dribbble</span>
+                        <span class="sr-only">LinkedIn</span>
                         <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd"
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-4.872c0-1.163-.021-2.658-1.621-2.658-1.621 0-1.87 1.264-1.87 2.571v4.959h-3v-10h2.873v1.367h.041c.4-.756 1.379-1.554 2.841-1.554 3.039 0 3.6 2.001 3.6 4.6v5.587z"
                                 clip-rule="evenodd" />
                         </svg>
                     </a>
