@@ -1,11 +1,22 @@
 <template>
   <div class="bg-white/50 dark:bg-black/70">
     <!-- Itera sobre las categorías -->
-    <div v-for="category in dataGame.categories" :key="category.category" class="text-center gap-16 m-20">
-      <h2 class="text-2xl font-bold -mb-20">{{ category.category }}</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-16 m-36">
+    <div 
+      v-for="category in dataGame.categories" 
+      :key="category.category" 
+      class="text-center gap-8 sm:gap-16 m-8 mt-24 sm:m-20"
+    >
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:-mb-20">
+        {{ category.category }}
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 sm:gap-16 p-4 sm:m-36 sm:text-center">
         <!-- Itera sobre los juegos de cada categoría -->
-        <GameCard v-for="game in category.games" :key="game.name" :game="game" />
+        <GameCard 
+          v-for="game in category.games" 
+          :key="game.name" 
+          :game="game"
+          class="w-full h-full"
+        />
       </div>
     </div>
   </div>

@@ -37,11 +37,20 @@ onMounted(() => {
 <template>
   <main class="bg-white/50 dark:bg-black/70">
     <HeroBanner class="animate-blurred-fade-in"/>
-    <SearchInput v-model="searchQuery" class="animate-blurred-fade-in mt-10" />
-    <div class="text-center gap-16 m-20 mt-64">
-      <h2 class="text-2xl font-bold -mb-20">Here you have some games you may like!</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-16 m-36">
-        <GameCard v-for="game in randomGames" :key="game.name" :game="game" />
+    <SearchInput v-model="searchQuery" class="animate-blurred-fade-in mt-8 mb-44 sm:mt-16 lg:mt-20" />
+    
+    <div class="text-center gap-8 sm:gap-16 m-8 sm:m-20 mt-32 sm:mt-64">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-8 sm:-mb-20">
+        Here you have some games you may like!
+      </h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 sm:gap-16 m-8 sm:m-36">
+        <GameCard 
+          v-for="game in randomGames" 
+          :key="game.name" 
+          :game="game"
+          class="w-full h-full"
+        />
       </div>
     </div>
   </main>

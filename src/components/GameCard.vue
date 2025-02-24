@@ -12,7 +12,7 @@ defineProps({
 
 <template>
   <RouterLink :to="{ name: 'game', params: { id: game.name } }" class="group relative block h-64 sm:h-80 lg:h-96">
-    <div class="hidden md:inline">
+    <div class="hidden xl:inline">
       <span
         class="absolute inset-0 border-2 border-dashed rounded-lg border-t-[#b197ff] border-r-[#b197ff]/50 border-b-[#b197ff]/40 border-l-[#b197ff]/30"></span>
 
@@ -38,7 +38,7 @@ defineProps({
       </div>
     </div>
 
-    <div class="md:hidden h-full flex flex-col">
+    <div class="2xl:hidden h-full flex flex-col">
       <div class="relative flex-1 overflow-hidden rounded-lg">
         <img :src="game.cover_image" :alt="game.name"
           class="h-full w-full object-cover transition-transform duration-300" />

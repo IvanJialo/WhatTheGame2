@@ -34,12 +34,15 @@ onMounted(() => {
 </script>
 <template>
   <div class="bg-white/50 dark:bg-black/70">
-    <!-- Itera sobre las categorías -->
     <div class="text-center gap-16 m-20">
       <h2 class="text-2xl font-bold -mb-20">Most Played</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-16 m-36">
-        <!-- Itera sobre los juegos de cada categoría -->
-        <GameCard v-for="game in dataGame.categories" :key="game.name" :game="game" />
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-16 m-36">
+        <GameCard 
+          v-for="game in dataGame.categories" 
+          :key="game.name" 
+          :game="game"
+          class="w-full h-full"
+        />
       </div>
     </div>
   </div>
