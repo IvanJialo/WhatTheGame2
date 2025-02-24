@@ -97,36 +97,36 @@ const showMobileMenu = ref(false);
               <li>
                 <RouterLink
                   class="block py-2 text-lg hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-4"
-                  to="/categories">
+                  to="/categories" @click="showMobileMenu = false">
                   Categories
                 </RouterLink>
               </li>
               <li>
                 <RouterLink
                   class="block py-2 text-lg hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-4"
-                  to="/most-played">
+                  to="/most-played" @click="showMobileMenu = false">
                   Most Played
                 </RouterLink>
               </li>
               <li>
                 <RouterLink
                   class="block py-2 text-lg hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-4"
-                  to="/latest">
+                  to="/latest" @click="showMobileMenu = false">
                   Latest
                 </RouterLink>
               </li>
             </ul>
           </nav>
 
-          <SearchInput class="w-full" />
+          <SearchInput class="w-full" @submit.prevent="showMobileMenu = false" />
 
           <div class="flex flex-col gap-4">
             <ToggleDarkLight />
             <div class="flex flex-col gap-2">
-              <a class="block text-center text-black font-medium py-2.5 bg-[#DCD0FF] hover:bg-[#b197ff] rounded-md" href="#">
+              <a class="block text-center text-black font-medium py-2.5 bg-[#DCD0FF] hover:bg-[#b197ff] rounded-md" href="#" @click="showMobileMenu = false">
                 Login
               </a>
-              <a class="block text-center text-black font-medium py-2.5 bg-[#b197ff] hover:bg-[#DCD0FF] rounded-md" href="#">
+              <a class="block text-center text-black font-medium py-2.5 bg-[#b197ff] hover:bg-[#DCD0FF] rounded-md" href="#" @click="showMobileMenu = false">
                 Register
               </a>
             </div>
