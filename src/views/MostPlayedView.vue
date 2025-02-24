@@ -1,7 +1,7 @@
 <script setup>
 import { ref as dbRef, onValue } from "firebase/database"; // Firebase
 import { database } from "../data/firebase"; // Configuración de Firebase
-import { onMounted, reactive, computed } from "vue"; // Vue 3 Composition API
+import { onMounted, reactive } from "vue"; // Vue 3 Composition API
 import GameCard from "../components/GameCard.vue"; // Componente GameCard
 
 // Estado reactivo para almacenar los datos del juego
