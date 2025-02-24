@@ -4,6 +4,8 @@ import CategoriesView from '../views/CategoriesView.vue'
 import MostPlayedView from '../views/MostPlayedView.vue'
 import LatestView from '../views/LatestView.vue'
 import GameView from '../views/GameView.vue'
+import LogInView from '../views/LogInView.vue'
+import SignUpView from '../views/SignUpView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +34,16 @@ const router = createRouter({
       path: '/game/:id',
       name: 'game',
       component: GameView,
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: LogInView 
+    },
+    {
+      path: '/signup',
+      name: 'signup',
+      component: SignUpView
     }
   ],
   scrollBehavior() {

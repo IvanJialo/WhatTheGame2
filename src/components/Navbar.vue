@@ -59,19 +59,19 @@ const showMobileMenu = ref(false);
         <div class="hidden md:flex items-center gap-4">
           <ToggleDarkLight />
           <div class="flex gap-2">
-            <a
+            <RouterLink
               class="block rounded-md bg-[#DCD0FF] px-5 py-2.5 text-sm font-medium text-black transition hover:bg-[#b197ff]"
-              href="#"
+              to="/login"
             >
               Login
-            </a>
+            </RouterLink>
 
-            <a
+            <RouterLink
               class="hidden rounded-md bg-[#b197ff] px-5 py-2.5 text-sm font-medium text-black transition hover:bg-[#DCD0FF] sm:block"
-              href="#"
+              to="/signup"
             >
               Register
-            </a>
+            </RouterLink>
           </div>
         </div>
 
@@ -123,12 +123,12 @@ const showMobileMenu = ref(false);
           <div class="flex flex-col gap-4">
             <ToggleDarkLight />
             <div class="flex flex-col gap-2">
-              <a class="block text-center text-black font-medium py-2.5 bg-[#DCD0FF] hover:bg-[#b197ff] rounded-md" href="#" @click="showMobileMenu = false">
+              <RouterLink class="block text-center text-black font-medium py-2.5 bg-[#DCD0FF] hover:bg-[#b197ff] rounded-md" to="/login" @click="showMobileMenu = false">
                 Login
-              </a>
-              <a class="block text-center text-black font-medium py-2.5 bg-[#b197ff] hover:bg-[#DCD0FF] rounded-md" href="#" @click="showMobileMenu = false">
+              </RouterLink>
+              <RouterLink class="block text-center text-black font-medium py-2.5 bg-[#b197ff] hover:bg-[#DCD0FF] rounded-md" to="/signup" @click="showMobileMenu = false">
                 Register
-              </a>
+              </RouterLink>
             </div>
           </div>
         </div>
