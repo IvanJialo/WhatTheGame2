@@ -32,11 +32,12 @@ onMounted(() => {
   loadDataFromFirebase();
 });
 </script>
+
 <template>
   <div class="bg-white/50 dark:bg-black/70">
-    <div class="text-center gap-16 m-20">
-      <h2 class="text-2xl font-bold -mb-20">Most Played</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-16 m-36">
+    <div class="text-center gap-16 m-20 mt-24 md:m-36 lg:m-40 xl:m-44 2xl:m-48">
+      <h2 class="text-2xl font-bold mb-7 md:mb-7">Most Played</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8 sm:gap-16 md:gap-20 lg:gap-24 xl:gap-28 2xl:gap-32">
         <GameCard 
           v-for="game in dataGame.categories" 
           :key="game.name" 
