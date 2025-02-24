@@ -1,10 +1,17 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import { RouterLink, useRouter } from 'vue-router';
 import ToggleDarkLight from './ToggleDarkLight.vue';
 import SearchInput from './SearchInput.vue';
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
 
 const showMobileMenu = ref(false);
+const showSearchInput = computed(() => {
+  return router.currentRoute.value.name === 'home';
+});
+const router = useRouter();
+
+
+
 </script>
 
 <template>
@@ -54,7 +61,7 @@ const showMobileMenu = ref(false);
       </nav>
 
       <div class="flex items-center gap-4">
-        <SearchInput class="hidden md:block w-full max-w-[200px] lg:max-w-[250px]" />
+        <SearchInput v-show="!showSearchInput" class="hidden md:block w-full max-w-[200px] lg:max-w-[250px]" />
 
         <div class="hidden md:flex items-center gap-4">
           <ToggleDarkLight />
