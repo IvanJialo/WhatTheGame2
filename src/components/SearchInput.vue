@@ -29,9 +29,7 @@ const router = useRouter();
 
 onValue(dbRef(database, "categories"), (snapshot) => {
     const data = snapshot.val();
-    allGames.value = data
-        ? Object.values(data).flatMap((category) => category.games || [])
-        : [];
+    allGames.value = data ? Object.values(data).flatMap((category) => category.games || []) : [];
 });
 
 const filteredGames = computed(() => {
