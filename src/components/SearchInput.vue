@@ -27,7 +27,6 @@ const searchQuery = ref("");
 const allGames = ref([]);
 const router = useRouter();
 
-// Cargar juegos desde Firebase
 onValue(dbRef(database, "categories"), (snapshot) => {
     const data = snapshot.val();
     allGames.value = data
@@ -35,21 +34,16 @@ onValue(dbRef(database, "categories"), (snapshot) => {
         : [];
 });
 
-// Filtro de juegos según la búsqueda
 const filteredGames = computed(() => {
     const query = searchQuery.value.toLowerCase();
-    return query.length >= 3
-        ? allGames.value.filter((game) => game.name.toLowerCase().includes(query))
-        : [];
+    return query.length >= 3 ? allGames.value.filter((game) => game.name.toLowerCase().includes(query)) : [];
 });
 
-// Redirigir al seleccionar un juego
 const selectGame = (game) => {
     router.push({ name: 'game', params: { id: game.name } });
     searchQuery.value = "";
 };
 
-// Debounce para no buscar cada milisegundo
 let timeout;
 const debouncedSearch = () => {
     clearTimeout(timeout);
