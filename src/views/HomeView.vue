@@ -44,7 +44,7 @@ onMounted(() => {
         Here you have some games you may like!
       </h2>
       
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 sm:gap-16 m-8 sm:m-36">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 sm:gap-16 2xl:gap-10 m-8 sm:m-36">
         <GameCard 
           v-for="game in randomGames" 
           :key="game.name" 
