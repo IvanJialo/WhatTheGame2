@@ -4,7 +4,6 @@
         <h2 class="text-3xl font-bold text-[#b197ff] mb-8 text-center">Log In</h2>
   
         <form class="space-y-6">
-          <!-- Email -->
           <div>
             <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
             <input
@@ -16,7 +15,6 @@
             />
           </div>
   
-          <!-- Password -->
           <div>
             <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
             <input
@@ -28,7 +26,6 @@
             />
           </div>
   
-          <!-- Submit Button -->
           <button
             type="submit"
             class="w-full px-4 py-2 bg-[#b197ff] text-white font-semibold rounded-lg hover:bg-[#DCD0FF] transition-colors"
@@ -36,7 +33,6 @@
             Log In
           </button>
   
-          <!-- Sign Up Link -->
           <p class="text-center text-sm text-gray-600 dark:text-gray-400">
             Don't have an account?
             <RouterLink to="/signup" class="text-[#b197ff] hover:underline">Sign Up</RouterLink>

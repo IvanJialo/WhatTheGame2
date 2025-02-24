@@ -1,33 +1,27 @@
 <script setup>
-import { ref as dbRef, onValue } from "firebase/database"; // Firebase
-import { database } from "../data/firebase"; // Configuración de Firebase
-import { onMounted, reactive, computed } from "vue"; // Vue 3 Composition API
-import GameCard from "../components/GameCard.vue"; // Componente GameCard
+import { ref as dbRef, onValue } from "firebase/database";
+import { database } from "../data/firebase";
+import { onMounted, reactive } from "vue";
+import GameCard from "../components/GameCard.vue";
 
-// Estado reactivo para almacenar los datos del juego
 const dataGame = reactive({
   categories: [],
 });
 
-// Método para cargar datos desde Firebase
 const loadDataFromFirebase = () => {
-  // Referencia a la ubicación en la base de datos
   const categoriesRef = dbRef(database, "categories");
 
-  // Escucha cambios en la base de datos
   onValue(categoriesRef, (snapshot) => {
-    const data = snapshot.val(); // Obtiene los datos
+    const data = snapshot.val();
 
     if (data) {
-      dataGame.categories = Object.values(data).flatMap((category) => category.games)
-        .sort((a, b) => new Date(b.release_date) - new Date(a.release_date)); // Convertir objeto a array, ordenar por release_date y tomar los primeros 30
+      dataGame.categories = Object.values(data).flatMap((category) => category.games).sort((a, b) => new Date(b.release_date) - new Date(a.release_date));
     } else {
-      dataGame.categories = []; // Si no hay datos, inicializa un array vacío
+      dataGame.categories = [];
     }
   });
 };
 
-// Carga los datos al montar el componente
 onMounted(() => {
   loadDataFromFirebase();
 });

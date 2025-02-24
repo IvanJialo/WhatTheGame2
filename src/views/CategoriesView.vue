@@ -21,15 +21,15 @@
 </template>
 
 <script setup>
-import { ref as dbRef, onValue } from "firebase/database"; // Firebase
-import { database } from "../data/firebase"; // Configuración de Firebase
-import { onMounted, reactive, ref } from "vue"; // Vue 3 Composition API
-import GameCard from "../components/GameCard.vue"; // Componente GameCard
+import { ref as dbRef, onValue } from "firebase/database";
+import { database } from "../data/firebase";
+import { onMounted, reactive, ref } from "vue";
+import GameCard from "../components/GameCard.vue";
 
-// Estado reactivo para almacenar los datos del juego
 const dataGame = reactive({
   categories: [],
 });
+
 const randomGames = ref([]);
 const allGames = ref([]);
 
@@ -37,7 +37,7 @@ const getRandomGames = () => {
   const shuffled = [...allGames.value].sort(() => 0.5 - Math.random());
   randomGames.value = shuffled.slice(0, 5);
 };
-// Método para cargar datos desde Firebase
+
 const loadDataFromFirebase = () => {
   const categoriesRef = dbRef(database, "categories");
 
@@ -47,10 +47,7 @@ const loadDataFromFirebase = () => {
     if (data) {
       dataGame.categories = Object.values(data).map((category) => {
         const shuffledGames = category.games.sort(() => 0.5 - Math.random());
-        return {
-          category: category.category,
-          games: shuffledGames.slice(0, 5), // Tomar 5 juegos aleatorios
-        };
+        return { category: category.category,games: shuffledGames.slice(0, 5) };
       }); getRandomGames();
     } else {
       dataGame.categories = [];
@@ -58,7 +55,6 @@ const loadDataFromFirebase = () => {
   });
 };
 
-// Carga los datos al montar el componente
 onMounted(() => {
   loadDataFromFirebase();
 });

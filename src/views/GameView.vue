@@ -7,16 +7,12 @@ const route = useRoute();
 const game = ref(null);
 
 const findGame = (gameName) => {
-  return dataGame.categories
-    .flatMap(category => category.games)
-    .find(game => game.name === gameName);
+  return dataGame.categories.flatMap(category => category.games).find(game => game.name === gameName);
 };
 
 game.value = findGame(route.params.id);
 
-watch(
-  () => route.params.id,
-  (newGameName) => {
+watch( () => route.params.id, (newGameName) => {
     game.value = findGame(newGameName);
   }
 );
