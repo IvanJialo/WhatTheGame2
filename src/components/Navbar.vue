@@ -118,7 +118,7 @@ const showMobileMenu = ref(false);
             </ul>
           </nav>
 
-          <SearchInput class="w-full" @submit.prevent="showMobileMenu = false" />
+          <SearchInput class="w-full" />
 
           <div class="flex flex-col gap-4">
             <ToggleDarkLight />
