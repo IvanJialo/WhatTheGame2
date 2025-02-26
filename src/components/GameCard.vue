@@ -18,8 +18,8 @@ defineProps({
 
       <div
         class="relative flex h-full transform items-end rounded-lg bg-white/60 dark:bg-black/80 backdrop-blur transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
-        <div class=" p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-15 sm:p-6 lg:p-8">
-          <img :src="game.cover_image" :alt="game.name" class="w-full rounded-lg" />
+        <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-15 sm:p-6 lg:p-8">
+          <img :src="game.cover_image" :alt="game.name" class="w-full aspect-[3/4]  rounded-lg" />
           <h2 class="mt-4 text-xl font-medium sm:text-2xl line-clamp-2">{{ game.name }}</h2>
         </div>
 
