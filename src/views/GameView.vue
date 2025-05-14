@@ -5,12 +5,25 @@ import { useRoute } from 'vue-router';
 import { getGameDetailsById, getGameStores, getGameTrailers, getStoreById, getGameScreenshots } from '@/data/rawg';
 
 const gameScreenshots = ref([])
-const storeNames = ref([])
 const gameStores = ref([]);
 const gameDetails = ref(null);
 const gameTrailers = ref(null);
 const route = useRoute();
 // const game = ref(null);
+
+const selectedScreenshot = ref(null);
+const showModal = ref(false);
+
+const openModal = (image) => {
+  selectedScreenshot.value = image;
+  showModal.value = true;
+};
+
+const closeModal = () => {
+  showModal.value = false;
+  selectedScreenshot.value = null;
+};
+
 
 watch(
   () => route.params.id,
@@ -56,9 +69,9 @@ watch(
 );
 
 
-console.log("Store Names: " + storeNames)
-console.log("Game Stores: " + gameStores)
-console.log("Game Details: " + gameDetails)
+// console.log("Store Names: " + storeNames)
+// console.log("Game Stores: " + gameStores)
+// console.log("Game Details: " + gameDetails)
 
 // const findGame = (gameName) => {
 //   return dataGame.categories.flatMap(category => category.games).find(game => game.name === gameName);
@@ -93,7 +106,18 @@ console.log("Game Details: " + gameDetails)
             </div>
           </div>
 
-
+          <!-- Galería de screenshots -->
+          <div v-if="gameScreenshots && gameScreenshots.length > 0"
+            class="bg-white/80 dark:bg-black/80 backdrop-blur rounded-xl p-6 mt-6">
+            <h3 class="text-xl font-bold text-[#b197ff] mb-4">Capturas de pantalla</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div v-for="(screenshot, index) in gameScreenshots" :key="screenshot.id"
+                class="rounded-lg overflow-hidden shadow-md cursor-zoom-in" @click="openModal(screenshot.image)">
+                <img :src="screenshot.image" :alt="`Screenshot ${index + 1}`"
+                  class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="space-y-8">
@@ -188,44 +212,6 @@ console.log("Game Details: " + gameDetails)
             </div>
           </div>
 
-          <div v-if="gameScreenshots.length > 0" class="bg-white/80 dark:bg-black/80 backdrop-blur rounded-xl p-6 mt-8">
-            <h3 class="text-xl font-bold text-[#b197ff] mb-4">Capturas de pantalla</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div v-for="(screenshot, index) in gameScreenshots" :key="index"
-                class="rounded-lg overflow-hidden shadow-md">
-                <img :src="screenshot.image" :alt="`Screenshot ${index + 1}`" class="w-full h-auto object-cover" />
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <!-- <div class="bg-white/80 dark:bg-black/80 backdrop-blur rounded-xl p-6">
-            <h3 class="text-xl font-bold text-[#b197ff] mb-4">Reviews</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              <div v-for="(score, source) in game.reviews" :key="source" class="p-4 rounded-lg bg-[#b197ff]/10">
-                <p class="font-bold">{{ source }}</p>
-                <p class="text-2xl">{{ score }}</p>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="space-y-4">
-            <h3 class="text-xl font-bold text-[#b197ff]">Media</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a v-for="(link, index) in game.tutorial_links" :key="index" :href="link" target="_blank"
-                class="flex items-center justify-center p-4 rounded-lg bg-[#b197ff]/10 hover:bg-[#b197ff]/20 transition-colors">
-                <i class="pi pi-youtube text-2xl mr-2 text-[#b197ff]"></i>
-                <span>Gameplay Tutorial {{ index + 1 }}</span>
-              </a>
-              <a :href="game.trailer_preview" target="_blank"
-                class="flex items-center justify-center p-4 rounded-lg bg-[#b197ff]/10 hover:bg-[#b197ff]/20 transition-colors">
-                <i class="pi pi-play text-2xl mr-2 text-[#b197ff]"></i>
-                <span>Watch Trailer</span>
-              </a>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -233,4 +219,16 @@ console.log("Game Details: " + gameDetails)
   <div v-else class="p-6 bg-white rounded-lg shadow-md max-w-3xl mx-auto">
     <p class="text-gray-700">Game not found.</p>
   </div>
+
+  <!-- Modal para imagen ampliada -->
+  <div v-if="showModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center"
+    @click.self="closeModal">
+    <div class="max-w-5xl max-h-[90vh] overflow-hidden rounded-lg">
+      <img :src="selectedScreenshot" alt="Expanded Screenshot" class="w-full h-auto object-contain" />
+    </div>
+    <button @click="closeModal" class="absolute top-4 right-4 text-white text-4xl font-bold hover:text-gray-300">
+      &times;
+    </button>
+  </div>
+
 </template>

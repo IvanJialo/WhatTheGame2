@@ -69,7 +69,7 @@ async function getGameScreenshots(id) {
     const response = await fetch(`${BASE_URL}/games/${id}/screenshots?key=${API_KEY}`);
     if (!response.ok) throw new Error('Error al obtener las capturas de pantalla del juego');
     const data = await response.json();
-    console.log("Screenshots: " + JSON.stringify(data, null, 2));
+    // console.log("Screenshots: " + JSON.stringify(data, null, 2));
     return data;
   } catch (error) {
     console.error(`Error al obtener las capturas de pantalla del juego con ID ${id}:`, error);
