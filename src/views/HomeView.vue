@@ -1,6 +1,7 @@
 <script setup>
-import { ref as dbRef, onValue } from "firebase/database";
-import { database } from "../data/firebase";
+// import { ref as dbRef, onValue } from "firebase/database";
+// import { database } from "../data/firebase";
+import { getGamesHome } from "@/data/rawg";
 import { ref, onMounted } from "vue";
 import HeroBanner from "@/components/HeroBanner.vue";
 import GameCard from "@/components/GameCard.vue";
@@ -10,25 +11,36 @@ const searchQuery = ref("");
 const allGames = ref([]);
 const randomGames = ref([]);
 
-const loadGamesFromFirebase = () => {
-  const gamesRef = dbRef(database, "categories");
+// const loadGamesFromFirebase = () => {
+//   const gamesRef = dbRef(database, "categories");
 
-  onValue(gamesRef, (snapshot) => {
-    const data = snapshot.val();
-    if (data) {
-      allGames.value = Object.values(data).flatMap((category) => category.games || []);
-      getRandomGames();
-    }
-  });
-};
+//   onValue(gamesRef, (snapshot) => {
+//     const data = snapshot.val();
+//     if (data) {
+//       allGames.value = Object.values(data).flatMap((category) => category.games || []);
+//       getRandomGames();
+//     }
+//   });
+// };
 
 const getRandomGames = () => {
+  if (!Array.isArray(allGames.value)) {
+    console.error("allGames no es un array:", allGames.value);
+    return;
+  }
+
   const shuffled = [...allGames.value].sort(() => 0.5 - Math.random());
   randomGames.value = shuffled.slice(0, 5);
 };
 
-onMounted(() => {
-  loadGamesFromFirebase();
+onMounted(async () => {
+  // loadGamesFromFirebase();
+  
+  const gamesFromAPI = await getGamesHome();
+
+  allGames.value = gamesFromAPI;
+  console.log(allGames.value);
+  getRandomGames();
 });
 </script>
 

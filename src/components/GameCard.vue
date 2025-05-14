@@ -1,8 +1,19 @@
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps, onMounted, ref } from 'vue';
 import { RouterLink } from 'vue-router';
+import { getGameDetailsById } from '@/data/rawg';
 
-defineProps({
+const gameDetails = ref(null);
+
+onMounted(async () => {
+  try {
+    gameDetails.value = await getGameDetailsById(props.game.id);
+  } catch (error) {
+    console.error('Error al obtener detalles del juego:', error);
+  }
+});
+
+const props = defineProps({
   game: {
     type: Object,
     required: true,
@@ -11,57 +22,82 @@ defineProps({
 </script>
 
 <template>
-  <RouterLink :to="{ name: 'game', params: { id: game.name } }" class="group relative block h-64 sm:h-80 lg:h-96">
-    <div class="hidden 2xl:inline">
-      <span
-        class="absolute inset-0 border-2 border-dashed rounded-lg border-t-[#b197ff] border-r-[#b197ff]/50 border-b-[#b197ff]/40 border-l-[#b197ff]/30"></span>
+  <RouterLink
+    :to="{ name: 'game', params: { id: game.id } }"
+    class="group relative block h-64 sm:h-80 lg:h-96 cursor-crosshair"
+  >
+    <!-- Versión escritorio 2XL -->
+    <div class="hidden 2xl:block group relative overflow-hidden rounded-lg transition-transform hover:scale-105">
 
+      <!-- Imagen del juego -->
+      <img
+        :src="game.background_image"
+        :alt="game.name"
+        class="w-full h-96 object-cover rounded-lg transition duration-300 ease-in-out"
+      />
+
+      <!-- Nombre abajo visible siempre -->
+      <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 z-20">
+        <h2 class="text-xl font-semibold truncate">{{ game.name }}</h2>
+      </div>
+
+      <!-- Info al hacer hover -->
       <div
-        class="relative flex h-full transform items-end rounded-lg bg-white/60 dark:bg-black/80 backdrop-blur transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
-        <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-15 sm:p-6 lg:p-8">
-          <img :src="game.cover_image" :alt="game.name" class="w-full aspect-[3/4]  rounded-lg" />
-          <h2 class="mt-4 text-xl font-medium sm:text-2xl line-clamp-2">{{ game.name }}</h2>
+        class="absolute inset-0 bg-black/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 z-30"
+      >
+        <h2 class="text-white text-2xl font-bold mb-2 line-clamp-2">{{ game.name }}</h2>
+
+        <p class="text-sm text-gray-200 mb-2">
+          Lanzamiento: {{ new Date(game.released).toLocaleDateString() }}
+        </p>
+
+        <div class="flex flex-wrap gap-2 mb-2">
+          <span
+            v-for="platform in game.platforms"
+            :key="platform.platform.id"
+            class="px-2 py-1 bg-white/20 text-white text-xs rounded-full"
+          >
+            {{ platform.platform.name }}
+          </span>
         </div>
 
-        <div
-          class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-          <h3 class="mt-4 text-xl font-medium sm:text-2xl line-clamp-2">{{ game.name }}</h3>
-          <p class="mt-4 text-sm sm:text-base line-clamp-4">
-            {{ game.description }}
-          </p>
-          <div class="mt-4">
-            <p class="text-sm"><strong>Plataformas:</strong> {{ game.platforms.join(", ") }}</p>
-            <p class="text-sm"><strong>Lanzamiento:</strong> {{ game.release_date }}</p>
-          </div>
-          <p class="mt-8 font-bold">View more</p>
-        </div>
+        <p v-if="game.metacritic" class="text-sm text-yellow-400">
+          Metacritic: {{ game.metacritic }}
+        </p>
       </div>
     </div>
 
+    <!-- Versión móvil y tablets -->
     <div class="2xl:hidden h-full flex flex-col">
       <div class="relative flex-1 overflow-hidden rounded-lg">
-        <img :src="game.cover_image" :alt="game.name"
-          class="h-full w-full object-cover transition-transform duration-300" />
+        <img
+          :src="game.background_image"
+          :alt="game.name"
+          class="h-full w-full object-cover transition-transform duration-300"
+        />
 
         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
           <h2 class="text-white font-medium line-clamp-1 text-lg">{{ game.name }}</h2>
-          <p class="text-gray-300 text-sm mt-1 line-clamp-2">
-            {{ game.description }}
+          <p v-if="game.released" class="text-gray-300 text-sm mt-1 line-clamp-1">
+            {{ new Date(game.released).toLocaleDateString() }}
           </p>
         </div>
       </div>
 
       <div class="mt-2 px-2 text-center">
-        <span class="text-black dark:text-[#b197ff] font-medium block">
-          {{ game.release_date }}
-        </span>
-
-        <div class="mt-2 flex flex-wrap gap-2 justify-center">
-          <span v-for="platform in game.platforms" :key="platform"
-            class="px-2 py-1 bg-[#b197ff]/20 text-black dark:text-[#b197ff] text-xs rounded-full">
-            {{ platform }}
+        <div class="flex flex-wrap gap-2 justify-center">
+          <span
+            v-for="platform in game.platforms"
+            :key="platform.platform.id"
+            class="px-2 py-1 bg-[#b197ff]/20 text-black dark:text-[#b197ff] text-xs rounded-full"
+          >
+            {{ platform.platform.name }}
           </span>
         </div>
+
+        <p v-if="game.metacritic" class="mt-1 text-sm text-yellow-500">
+          Metacritic: {{ game.metacritic }}
+        </p>
       </div>
     </div>
   </RouterLink>
