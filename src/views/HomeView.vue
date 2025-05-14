@@ -25,7 +25,7 @@ const randomGames = ref([]);
 
 const getRandomGames = () => {
   if (!Array.isArray(allGames.value)) {
-    console.error("allGames no es un array:", allGames.value);
+    // console.error("allGames no es un array:", allGames.value);
     return;
   }
 
@@ -39,7 +39,7 @@ onMounted(async () => {
   const gamesFromAPI = await getGamesHome();
 
   allGames.value = gamesFromAPI;
-  console.log(allGames.value);
+  // console.log(allGames.value);
   getRandomGames();
 });
 </script>

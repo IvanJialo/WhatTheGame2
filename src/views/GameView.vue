@@ -5,6 +5,7 @@ import { useRoute } from 'vue-router';
 import { getGameDetailsById, getGameStores, getGameTrailers, getStoreById, getGameScreenshots } from '@/data/rawg';
 
 const gameScreenshots = ref([])
+const storeNames = ref([])
 const gameStores = ref([]);
 const gameDetails = ref(null);
 const gameTrailers = ref(null);
