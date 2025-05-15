@@ -123,27 +123,27 @@ watch(
 
         <div class="space-y-8">
           <div class="space-y-4">
-            <h1 class="text-4xl sm:text-5xl font-bold text-[#b197ff]">
+            <h1 v-if="gameDetails.name" class="text-4xl sm:text-5xl font-bold text-[#b197ff]">
               {{ gameDetails.name }}
             </h1>
 
             <div class="flex flex-wrap gap-4 text-sm">
-              <div class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
+              <div v-if="gameDetails.released" class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
                 <i class="pi pi-calendar text-[#b197ff]"></i>
                 <span>{{ gameDetails.released }}</span>
               </div>
 
-              <div class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
+              <div v-if="gameDetails.playtime" class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
                 <i class="pi pi-clock text-[#b197ff]"></i>
                 <span>{{ gameDetails.playtime }}h</span>
               </div>
 
-              <div class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
+              <div v-if="gameDetails.rating" class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
                 <i class="pi pi-star text-[#b197ff]"></i>
                 <span>Rating: {{ gameDetails.rating }}/5</span>
               </div>
 
-              <div class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
+              <div v-if="gameDetails.esrb_rating" class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
                 <i class="pi pi-users text-[#b197ff]"></i>
                 <span>Age: {{ gameDetails.esrb_rating.name }}</span>
               </div>
@@ -170,7 +170,7 @@ watch(
             </div>
           </div>
 
-          <div class="prose dark:prose-invert max-w-none">
+          <div v-if="gameDetails.description_raw" class="prose dark:prose-invert max-w-none">
             <h2 class="text-lg font-semibold mb-2 text-[#b197ff]">Description</h2>
             <p class="text-lg">{{ gameDetails.description_raw }}</p>
           </div>
@@ -192,7 +192,7 @@ watch(
               </div>
             </div>
 
-            <div class="bg-white/80 dark:bg-black/80 backdrop-blur rounded-xl p-6">
+            <div v-if="gameDetails.platforms.length" class="bg-white/80 dark:bg-black/80 backdrop-blur rounded-xl p-6">
               <h3 class="text-xl font-bold text-[#b197ff] mb-4">Platforms</h3>
               <div class="flex flex-wrap gap-2">
                 <span v-for="platform in gameDetails.platforms" :key="platform.platform.id"
@@ -203,7 +203,7 @@ watch(
             </div>
           </div>
 
-          <div v-if="gameTrailers" class="bg-white/80 dark:bg-black/80 backdrop-blur rounded-xl p-6">
+          <div v-if="gameTrailers.results.length" class="bg-white/80 dark:bg-black/80 backdrop-blur rounded-xl p-6">
             <h3 class="text-xl font-bold text-[#b197ff] mb-4">Trailer</h3>
             <div class="relative aspect-video rounded-lg overflow-hidden shadow-lg">
               <video controls class="w-full h-full object-cover">
