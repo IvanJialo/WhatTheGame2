@@ -110,7 +110,7 @@ watch(
           <!-- Galería de screenshots -->
           <div v-if="gameScreenshots && gameScreenshots.length > 0"
             class="bg-white/80 dark:bg-black/80 backdrop-blur rounded-xl p-6 mt-6">
-            <h3 class="text-xl font-bold text-[#b197ff] mb-4">Capturas de pantalla</h3>
+            <h3 class="text-xl font-bold text-[#b197ff] mb-4">Screenshots</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div v-for="(screenshot, index) in gameScreenshots" :key="screenshot.id"
                 class="rounded-lg overflow-hidden shadow-md cursor-zoom-in" @click="openModal(screenshot.image)">

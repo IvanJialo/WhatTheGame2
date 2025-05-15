@@ -48,7 +48,7 @@ const props = defineProps({
         <h2 class="text-white text-2xl font-bold mb-2 line-clamp-2">{{ game.name }}</h2>
 
         <p class="text-sm text-gray-200 mb-2">
-          Lanzamiento: {{ new Date(game.released).toLocaleDateString() }}
+          Released: {{ new Date(game.released).toLocaleDateString() }}
         </p>
 
         <div class="flex flex-wrap gap-2 mb-2">
