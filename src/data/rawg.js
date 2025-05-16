@@ -17,7 +17,7 @@ async function getGamesHome() {
   const randomPage = Math.floor(Math.random() * 200) + 1;
 
   try {
-    const response = await fetch(`${BASE_URL}/games?key=${API_KEY}&page=${randomPage}&page_size=100`);
+    const response = await fetch(`${BASE_URL}/games?key=${API_KEY}&page=${randomPage}&page_size=10000`);
     if (!response.ok) throw new Error('Error al obtener juegos');
     const data = await response.json();
     return data.results;
@@ -79,7 +79,7 @@ async function getGameScreenshots(id) {
 
 async function getGameGenres() {
   try {
-    const response = await fetch(`${BASE_URL}/genres?key=${API_KEY}`);
+    const response = await fetch(`${BASE_URL}/genres?page=1&page_size=30&key=${API_KEY}`);
     if (!response.ok) throw new Error('Error al obtener los géneros');
     const data = await response.json();
     return data;
@@ -90,13 +90,27 @@ async function getGameGenres() {
 }
 
 async function getGamesByGenre(genreSlug) {
+  const randomPage = Math.floor(Math.random() * 100) + 1;
+
   try {
-    const response = await fetch(`${BASE_URL}/games?genres=${genreSlug}&page_size=100&key=${API_KEY}`);
+    const response = await fetch(`${BASE_URL}/games?genres=${genreSlug}&page=${randomPage}&page_size=1000&key=${API_KEY}`);
     if (!response.ok) throw new Error('Error al obtener juegos por género');
     const data = await response.json();
     return data;
   } catch (error) {
     console.error(`Error al obtener juegos por género con ID ${genreId}:`, error);
+    throw error;
+  }
+}
+
+async function searchGames(query) {
+  try {
+    const response = await fetch(`${BASE_URL}/games?search=${encodeURIComponent(query)}&key=${API_KEY}`);
+    if (!response.ok) throw new Error('Error al obtener juegos por búsqueda');
+    const data = await response.json();
+    return data.results || [];
+  } catch (error) {
+    console.error(`Error en searchGames con query "${query}":`, error);
     throw error;
   }
 }
@@ -110,6 +124,7 @@ export {
     getGameScreenshots,
     getGameGenres,
     getGamesByGenre,
+    searchGames,
 
  };
 
