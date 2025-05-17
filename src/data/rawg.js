@@ -93,7 +93,7 @@ async function getGamesByGenre(genreSlug) {
   const randomPage = Math.floor(Math.random() * 100) + 1;
 
   try {
-    const response = await fetch(`${BASE_URL}/games?genres=${genreSlug}&page=${randomPage}&page_size=1000&key=${API_KEY}`);
+    const response = await fetch(`${BASE_URL}/games?genres=${genreSlug}&page=${randomPage}&page_size=100&key=${API_KEY}`);
     if (!response.ok) throw new Error('Error al obtener juegos por género');
     const data = await response.json();
     return data;
@@ -127,6 +127,17 @@ async function getMostPlayedGames() {
   }
 }
 
+async function getLatestGames() {
+  try {
+    const today = new Date().toISOString().split('T')[0];
+    const response = await fetch(`${BASE_URL}/games?ordering=-released&dates=2000-01-01,${today}&page_size=20&key=${API_KEY}`);
+    if (!response.ok) throw new Error('Error al obtener juegos más recientes');
+    return await response.json();
+  } catch (error) {
+    console.error('Error en getLatestGames:', error);
+    throw error;
+  }
+}
 
 export { 
     getGamesHome,
@@ -139,6 +150,7 @@ export {
     getGamesByGenre,
     searchGames,
     getMostPlayedGames,
+    getLatestGames,
 
  };
 
