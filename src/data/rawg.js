@@ -115,6 +115,19 @@ async function searchGames(query) {
   }
 }
 
+async function getMostPlayedGames() {
+  try {
+    const response = await fetch(`${BASE_URL}/games?ordering=-added&page_size=40&key=${API_KEY}`);
+    if (!response.ok) throw new Error('Error al obtener juegos más jugados');
+    const data = await response.json();
+    return data.results || [];
+  } catch (error) {
+    console.error('Error en getMostPlayedGames:', error);
+    throw error;
+  }
+}
+
+
 export { 
     getGamesHome,
     getGameDetailsById,
@@ -125,6 +138,7 @@ export {
     getGameGenres,
     getGamesByGenre,
     searchGames,
+    getMostPlayedGames,
 
  };
 

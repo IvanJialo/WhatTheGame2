@@ -9,7 +9,7 @@
         {{ category.category }}
       </h2>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-6 sm:gap-8 p-4 mt-8">
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 sm:gap-16 2xl:gap-9 p-4 sm:ml-36 sm:mr-36">
         <GameCard
           v-for="game in category.games"
           :key="game.id"
