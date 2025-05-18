@@ -6,6 +6,7 @@ import LatestView from '../views/LatestView.vue'
 import GameView from '../views/GameView.vue'
 import LogInView from '../views/LogInView.vue'
 import SignUpView from '../views/SignUpView.vue'
+import HostingView from '@/views/HostingView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,12 +39,17 @@ const router = createRouter({
     {
       path: '/login',
       name: 'login',
-      component: LogInView 
+      component: LogInView
     },
     {
       path: '/signup',
       name: 'signup',
       component: SignUpView
+    },
+    {
+      path: '/hosting',
+      name: 'hosting',
+      component: HostingView,
     }
   ],
   scrollBehavior() {
