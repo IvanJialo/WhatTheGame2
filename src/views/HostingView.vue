@@ -57,11 +57,11 @@ function handleSubmit() {
                         <li>✅ Automatic backups</li>
                     </ul>
                     <button disabled
-                        class="w-full bg-gray-400 dark:bg-gray-700 text-white font-medium py-2 rounded-lg cursor-not-allowed">
+                        class="w-full bg-[#b197ff] text:black dark:text-white font-medium py-2 rounded-lg cursor-not-allowed">
                         Coming soon
                     </button>
                 </div>
-                <div class="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow w-full max-w-sm border-2 border-[#b197ff]">
+                <div class="bg-white/70 dark:bg-black/70 p-6 rounded-2xl shadow w-full max-w-sm border-2 border-[#b197ff]">
                     <h3 class="text-xl font-bold mb-2">Premium</h3>
                     <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">For active communities and more power.</p>
                     <p class="text-2xl font-bold mb-4">9€/month</p>
@@ -71,7 +71,7 @@ function handleSubmit() {
                         <li>✅ SSH access</li>
                     </ul>
                     <button disabled
-                        class="w-full bg-gray-400 dark:bg-gray-700 text-white font-medium py-2 rounded-lg cursor-not-allowed">
+                        class="w-full bg-[#b197ff] text:black dark:text-white font-medium py-2 rounded-lg cursor-not-allowed">
                         Coming soon
                     </button>
                 </div>
@@ -85,7 +85,7 @@ function handleSubmit() {
                 <input v-model="email" type="email" required placeholder="Your email address"
                     class="w-full sm:w-auto px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-800" />
                 <button type="submit"
-                    class="bg-[#b197ff] text-black font-semibold px-6 py-2 rounded-md hover:bg-[#DCD0FF] transition">
+                    class="bg-[#b197ff] text-black dark:text-white font-semibold px-6 py-2 rounded-md hover:text-white dark:hover:text-black hover:bg-[#DCD0FF] transition">
                     Notify me
                 </button>
             </form>
