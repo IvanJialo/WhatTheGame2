@@ -17,7 +17,7 @@ async function getGamesHome() {
   const randomPage = Math.floor(Math.random() * 200) + 1;
 
   try {
-    const response = await fetch(`${BASE_URL}/games?key=${API_KEY}&page=${randomPage}&page_size=10000`);
+    const response = await fetch(`${BASE_URL}/games?key=${API_KEY}&page=${randomPage}&page_size=1000`);
     if (!response.ok) throw new Error('Error al obtener juegos');
     const data = await response.json();
     return data.results;
