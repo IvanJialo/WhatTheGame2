@@ -2,8 +2,10 @@
     <footer class="bg-white dark:bg-black border-b border-gray-200 dark:border-gray-600">
         <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
             <div class="flex justify-center text-teal-600 dark:text-teal-300">
-                <img src="/src/assets/logo.png" alt="WhatTheGame" class="h-32 w-auto hidden dark:block" draggable="false">
-                <img src="/src/assets/logo_dark.png" alt="WhatTheGame" class="h-32 w-auto dark:hidden" draggable="false">
+                <img src="/src/assets/logo.png" alt="WhatTheGame" class="h-32 w-auto hidden dark:block"
+                    draggable="false">
+                <img src="/src/assets/logo_dark.png" alt="WhatTheGame" class="h-32 w-auto dark:hidden"
+                    draggable="false">
             </div>
 
             <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-black dark:text-white">
@@ -84,10 +86,13 @@
                 <li>
                     <a href="https://x.com/Ivxn03" rel="noreferrer" target="_blank"
                         class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
-                        <span class="sr-only">Twitter</span>
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path
-                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        <span class="sr-only">X</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none" stroke="#ffffff" stroke-width="1.5">
+                                <path
+                                    d="M16.82 20.768L3.753 3.968A.6.6 0 0 1 4.227 3h2.48a.6.6 0 0 1 .473.232l13.067 16.8a.6.6 0 0 1-.474.968h-2.48a.6.6 0 0 1-.473-.232Z" />
+                                <path stroke-linecap="round" d="M20 3L4 21" />
+                            </g>
                         </svg>
                     </a>
                 </li>
@@ -105,7 +110,8 @@
                 </li>
 
                 <li>
-                    <a href="https://www.linkedin.com/in/iv%C3%A1n-jim%C3%A9nez-alonso-066967278/" rel="noreferrer" target="_blank"
+                    <a href="https://www.linkedin.com/in/iv%C3%A1n-jim%C3%A9nez-alonso-066967278/" rel="noreferrer"
+                        target="_blank"
                         class="text-black transition hover:text-black/75 dark:text-white dark:hover:text-white/75">
                         <span class="sr-only">LinkedIn</span>
                         <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -117,11 +123,15 @@
                 </li>
             </ul>
         </div>
-        <div class="mt-8  border-t border-gray-500 pt-8 dark:border-gray-800">
+        <div class="mt-8 border-t border-gray-500 pt-8 dark:border-gray-800">
             <div class=" mb-5 mr-5 ml-5 sm:flex sm:justify-between">
-                <p class="text-xs text-gray-500 dark:text-gray-400">
+                <span class="text-xs text-gray-500 dark:text-gray-400">
                     &copy; 2025. WhatTheGame. All rights reserved.
-                </p>
+                </span>
+
+                <span class="text-center text-xs text-gray-500 dark:text-gray-400">
+                    This product uses the <a class="font-bold underline" href="https://rawg.io/" target="_blank" rel="noreferrer">RAWG</a> Video Games Database API but is not endorsed or certified by <a class="font-bold underline" href="https://rawg.io/" target="_blank" rel="noreferrer">RAWG</a>.
+                </span>
 
                 <ul class="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
                     <li>
