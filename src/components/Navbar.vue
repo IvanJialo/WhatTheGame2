@@ -3,7 +3,10 @@ import { RouterLink, useRouter } from 'vue-router';
 import ToggleDarkLight from './ToggleDarkLight.vue';
 import SearchInput from './SearchInput.vue';
 import { computed, ref, watch } from 'vue';
+import { useAuth } from '@/data/auth'
 
+const showProfileMenu = ref(false);
+const { user, logOut } = useAuth()
 const showMobileMenu = ref(false);
 const showSearchInput = computed(() => {
   return router.currentRoute.value.name === 'home';
@@ -76,18 +79,41 @@ watch(
 
         <div class="hidden md:flex items-center gap-4">
           <ToggleDarkLight />
-          <div class="flex gap-2">
+
+          <div v-if="!user" class="flex gap-2">
             <RouterLink
               class="block rounded-md bg-[#DCD0FF] px-5 py-2.5 text-sm font-medium text-black transition hover:bg-[#b197ff]"
               to="/login">
               Login
             </RouterLink>
-
             <RouterLink
               class="hidden rounded-md bg-[#b197ff] px-5 py-2.5 text-sm font-medium text-black transition hover:bg-[#DCD0FF] sm:block"
               to="/signup">
               Register
             </RouterLink>
+          </div>
+
+          <div v-else class="relative">
+            <button @click="showProfileMenu = !showProfileMenu"
+              class="p-2 rounded-full hover:bg-[#DCD0FF] dark:hover:bg-[#b197ff]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black dark:text-white" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5.121 17.804A8.001 8.001 0 0112 15a8.001 8.001 0 016.879 2.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </button>
+
+            <div v-if="showProfileMenu"
+              class="absolute right-0 mt-2 w-48 bg-white dark:bg-black border border-gray-300 dark:border-gray-600 rounded-md shadow-lg z-50">
+              <div class="px-4 py-2 text-sm text-gray-700 dark:text-gray-300">
+                {{ user.email }}
+              </div>
+              <hr class="border-gray-200 dark:border-gray-700" />
+              <button @click="logOut"
+                class="w-full text-left px-4 py-2 text-sm text-red-500 hover:bg-gray-100 dark:hover:bg-gray-800">
+                Logout
+              </button>
+            </div>
           </div>
         </div>
 
@@ -141,7 +167,7 @@ watch(
 
           <div class="flex flex-col gap-4">
             <ToggleDarkLight />
-            <div class="flex flex-col gap-2">
+            <div v-if="!user" class="flex flex-col gap-2">
               <RouterLink
                 class="block text-center text-black font-medium py-2.5 bg-[#DCD0FF] hover:bg-[#b197ff] rounded-md"
                 to="/login" @click="showMobileMenu = false">
@@ -153,6 +179,15 @@ watch(
                 Register
               </RouterLink>
             </div>
+
+            <div v-else class="flex flex-col gap-2 text-center">
+              <span class="text-sm dark:text-white text-black">{{ user.email }}</span>
+              <button @click="() => { logOut(); showMobileMenu = false }"
+                class="text-red-500 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md py-2">
+                Logout
+              </button>
+            </div>
+
           </div>
         </div>
       </div>
