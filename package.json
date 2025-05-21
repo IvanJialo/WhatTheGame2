@@ -12,6 +12,7 @@
     "@midudev/tailwind-animations": "^0.1.0",
     "firebase": "^11.7.3",
     "primeicons": "^7.0.0",
+    "vite-plugin-pwa": "^1.0.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
