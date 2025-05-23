@@ -1,31 +1,17 @@
 <script setup>
-// import { ref as dbRef, onValue } from "firebase/database";
-// import { database } from "../data/firebase";
 import { getGamesHome } from "@/data/rawg";
 import { ref, onMounted } from "vue";
 import HeroBanner from "@/components/HeroBanner.vue";
 import GameCard from "@/components/GameCard.vue";
+import GameCardSkeleton from "@/components/GameCardSkeleton.vue";
 import SearchInput from "@/components/SearchInput.vue";
 
 const searchQuery = ref("");
 const allGames = ref([]);
 const randomGames = ref([]);
 
-// const loadGamesFromFirebase = () => {
-//   const gamesRef = dbRef(database, "categories");
-
-//   onValue(gamesRef, (snapshot) => {
-//     const data = snapshot.val();
-//     if (data) {
-//       allGames.value = Object.values(data).flatMap((category) => category.games || []);
-//       getRandomGames();
-//     }
-//   });
-// };
-
 const getRandomGames = () => {
   if (!Array.isArray(allGames.value)) {
-    // console.error("allGames no es un array:", allGames.value);
     return;
   }
 
@@ -34,12 +20,10 @@ const getRandomGames = () => {
 };
 
 onMounted(async () => {
-  // loadGamesFromFirebase();
   
   const gamesFromAPI = await getGamesHome();
 
   allGames.value = gamesFromAPI;
-  // console.log(allGames.value);
   getRandomGames();
 });
 </script>
@@ -56,6 +40,7 @@ onMounted(async () => {
       </h2>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 sm:gap-16 2xl:gap-10 m-8 sm:m-36">
+        <GameCardSkeleton v-if="loading" v-for="n in 5" :key="n" />
         <GameCard v-for="game in randomGames" :key="game.name" :game="game" class="w-full h-full" />
       </div>
     </div>
