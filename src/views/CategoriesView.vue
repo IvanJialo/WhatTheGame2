@@ -10,7 +10,7 @@
       <div
         v-for="category in genreGames"
         :key="category.category"
-        class="text-center gap-8 sm:gap-16 m-8 sm:m-20"
+        class="text-center gap-8 sm:gap-16 m-8 mt-20 sm:m-20 "
       >
         <h2 class="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-[#b197ff] dark:text-[#d0bfff]">
           {{ category.category }}
