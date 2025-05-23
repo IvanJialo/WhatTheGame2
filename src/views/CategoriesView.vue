@@ -37,8 +37,26 @@ import GameCardSkeleton from "../components/GameCardSkeleton.vue";
 import { getGameGenres, getGamesByGenre } from "@/data/rawg";
 
 const genres = ref([]);
-const genreGames = ref([])
+const genreGames = ref([]);
 const loading = ref(true);
+
+const REQUIRED_COUNT = 10;
+
+const fetchValidGamesByGenre = async (genreId) => {
+  let page = 1;
+  const validGames = [];
+
+  while (validGames.length < REQUIRED_COUNT) {
+    const response = await getGamesByGenre(genreId);
+    if (!response.results.length) break;
+
+    const withCovers = response.results.filter(game => game.background_image);
+    validGames.push(...withCovers);
+    page++;
+  }
+
+  return validGames.slice(0, REQUIRED_COUNT);
+};
 
 onMounted(async () => {
   try {
@@ -48,19 +66,19 @@ onMounted(async () => {
     const randomGenres = genres.value.sort(() => 0.5 - Math.random()).slice(0, 10);
 
     const promises = randomGenres.map(async (genre) => {
-      const response = await getGamesByGenre(genre.id);
+      const games = await fetchValidGamesByGenre(genre.id);
       return {
-        category: genre.name, // el nombre del género
-        games: response.results.slice(0, 10), // los juegos de ese género
+        category: genre.name,
+        games,
       };
     });
 
     genreGames.value = await Promise.all(promises);
-
-    loading.value = false;
-
   } catch (error) {
-    console.error('Error al obtener juegos por género:', error);
+    console.error("Error al obtener juegos por género:", error);
+  } finally {
+    loading.value = false;
   }
 });
 </script>
+

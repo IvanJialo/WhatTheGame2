@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import GameCard from "../components/GameCard.vue";
-import GameCardSkeleton from "../components/GameCardSkeleton.vue"; // 👈 Asegúrate de tener este componente
+import GameCardSkeleton from "../components/GameCardSkeleton.vue";
 import { getLatestGames } from "@/data/rawg";
 
 const latestGames = ref([]);
@@ -10,7 +10,17 @@ const loading = ref(true);
 onMounted(async () => {
   try {
     const data = await getLatestGames();
-    latestGames.value = data.results;
+
+    // Filtrar juegos con carátula
+    const withCovers = data.results.filter(game => game.background_image);
+
+    // Asegurar mínimo 20
+    if (withCovers.length >= 20) {
+      latestGames.value = withCovers.slice(0, 20);
+    } else {
+      latestGames.value = []; // No mostrar si hay menos de 20
+    }
+
   } catch (error) {
     console.error("Error al obtener juegos:", error);
   } finally {
@@ -18,6 +28,7 @@ onMounted(async () => {
   }
 });
 </script>
+
 
 <template>
   <div class="bg-white/50 dark:bg-black/70">

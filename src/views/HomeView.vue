@@ -9,24 +9,32 @@ import SearchInput from "@/components/SearchInput.vue";
 const searchQuery = ref("");
 const allGames = ref([]);
 const randomGames = ref([]);
+const loading = ref(true);
 
 const getRandomGames = () => {
-  if (!Array.isArray(allGames.value)) {
+  const withCover = allGames.value.filter(game => game.background_image);
+  if (withCover.length < 5) {
+    randomGames.value = []; // no mostrar nada si no hay suficientes
     return;
   }
 
-  const shuffled = [...allGames.value].sort(() => 0.5 - Math.random());
+  const shuffled = withCover.sort(() => 0.5 - Math.random());
   randomGames.value = shuffled.slice(0, 5);
 };
 
 onMounted(async () => {
-  
-  const gamesFromAPI = await getGamesHome();
-
-  allGames.value = gamesFromAPI;
-  getRandomGames();
+  try {
+    const gamesFromAPI = await getGamesHome();
+    allGames.value = gamesFromAPI.results || gamesFromAPI;
+    getRandomGames();
+  } catch (error) {
+    console.error("Error al cargar juegos:", error);
+  } finally {
+    loading.value = false;
+  }
 });
 </script>
+
 
 <template>
   <main class="bg-white/50 dark:bg-black/70">
