@@ -20,7 +20,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="bg-white/50 dark:bg-black/70 min-h-screen">
+  <div class="bg-white/50 dark:bg-black/70">
     <div class="text-center gap-8 sm:gap-16 m-8 mt-24 sm:m-20">
       <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:-mb-20 text-[#b197ff] dark:text-[#d0bfff]">
         Latest
