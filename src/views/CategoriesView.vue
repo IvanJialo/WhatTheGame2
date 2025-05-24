@@ -28,8 +28,6 @@
   </div>
 </template>
 
-
-
 <script setup>
 import { onMounted, ref } from "vue";
 import GameCard from "../components/GameCard.vue";
@@ -39,19 +37,33 @@ import { getGameGenres, getGamesByGenre } from "@/data/rawg";
 const genres = ref([]);
 const genreGames = ref([]);
 const loading = ref(true);
-
 const REQUIRED_COUNT = 10;
+const MAX_PAGES = 5;
+
+const forbiddenTags = ["Hentai", "NSFW", "Sexual Content", "Nudity"];
+
+function isGameAllowed(game) {
+  if (!game.tags || !Array.isArray(game.tags)) return true;
+  const tagsLower = game.tags.map(tag => tag.name.toLowerCase());
+  return !tagsLower.some(tag =>
+    forbiddenTags.map(f => f.toLowerCase()).includes(tag)
+  );
+}
 
 const fetchValidGamesByGenre = async (genreId) => {
   let page = 1;
   const validGames = [];
 
-  while (validGames.length < REQUIRED_COUNT) {
-    const response = await getGamesByGenre(genreId);
-    if (!response.results.length) break;
+  while (validGames.length < REQUIRED_COUNT && page <= MAX_PAGES) {
+    const response = await getGamesByGenre(genreId, page);
 
-    const withCovers = response.results.filter(game => game.background_image);
-    validGames.push(...withCovers);
+    if (!response.results || response.results.length === 0) break;
+
+    const filtered = response.results.filter(
+      game => game.background_image && isGameAllowed(game)
+    );
+
+    validGames.push(...filtered);
     page++;
   }
 
@@ -63,7 +75,9 @@ onMounted(async () => {
     const allGenres = await getGameGenres();
     genres.value = allGenres.results;
 
-    const randomGenres = genres.value.sort(() => 0.5 - Math.random()).slice(0, 10);
+    const randomGenres = genres.value
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 10);
 
     const promises = randomGenres.map(async (genre) => {
       const games = await fetchValidGamesByGenre(genre.id);

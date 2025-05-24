@@ -7,20 +7,31 @@ import { getLatestGames } from "@/data/rawg";
 const latestGames = ref([]);
 const loading = ref(true);
 
+// Tags a excluir
+const forbiddenTags = ["Hentai", "NSFW", "Sexual Content", "Nudity"];
+
+function isGameAllowed(game) {
+  if (!game.tags || !Array.isArray(game.tags)) return true;
+  const tagsLower = game.tags.map(tag => tag.name.toLowerCase());
+  return !tagsLower.some(tag => forbiddenTags.map(f => f.toLowerCase()).includes(tag));
+}
+
 onMounted(async () => {
   try {
-    const data = await getLatestGames();
+    let page = 1;
+    let validGames = [];
 
-    // Filtrar juegos con carátula
-    const withCovers = data.results.filter(game => game.background_image);
-
-    // Asegurar mínimo 20
-    if (withCovers.length >= 20) {
-      latestGames.value = withCovers.slice(0, 20);
-    } else {
-      latestGames.value = []; // No mostrar si hay menos de 20
+    while (validGames.length < 20 && page <= 10) { // max 10 páginas para evitar bucle infinito
+      const data = await getLatestGames(page); // asegúrate que tu función acepte `page`
+      const filtered = data.results.filter(game =>
+        game.background_image &&
+        isGameAllowed(game)
+      );
+      validGames.push(...filtered);
+      page++;
     }
 
+    latestGames.value = validGames.slice(0, 20);
   } catch (error) {
     console.error("Error al obtener juegos:", error);
   } finally {
@@ -28,7 +39,6 @@ onMounted(async () => {
   }
 });
 </script>
-
 
 <template>
   <div class="bg-white/50 dark:bg-black/70">

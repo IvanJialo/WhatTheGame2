@@ -130,7 +130,7 @@ async function getMostPlayedGames() {
 async function getLatestGames() {
   try {
     const today = new Date().toISOString().split('T')[0];
-    const response = await fetch(`${BASE_URL}/games?ordering=-released&dates=2000-01-01,${today}&page_size=20&key=${API_KEY}`);
+    const response = await fetch(`${BASE_URL}/games?ordering=-released&dates=2000-01-01,${today}&page_size=50&key=${API_KEY}`);
     if (!response.ok) throw new Error('Error al obtener juegos más recientes');
     return await response.json();
   } catch (error) {

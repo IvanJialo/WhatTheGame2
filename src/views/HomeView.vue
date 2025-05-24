@@ -11,8 +11,20 @@ const allGames = ref([]);
 const randomGames = ref([]);
 const loading = ref(true);
 
+const forbiddenTags = ["Hentai", "NSFW", "Sexual Content", "Nudity"];
+
+function isGameAllowed(game) {
+  if (!game.tags || !Array.isArray(game.tags)) return true;
+  const tagsLower = game.tags.map(tag => tag.name.toLowerCase());
+  return !tagsLower.some(tag =>
+    forbiddenTags.map(f => f.toLowerCase()).includes(tag)
+  );
+}
+
 const getRandomGames = () => {
-  const withCover = allGames.value.filter(game => game.background_image);
+  const withCover = allGames.value.filter(
+    game => game.background_image && isGameAllowed(game)
+  );
   if (withCover.length < 5) {
     randomGames.value = []; // no mostrar nada si no hay suficientes
     return;
@@ -25,7 +37,12 @@ const getRandomGames = () => {
 onMounted(async () => {
   try {
     const gamesFromAPI = await getGamesHome();
-    allGames.value = gamesFromAPI.results || gamesFromAPI;
+    allGames.value = Array.isArray(gamesFromAPI?.results)
+      ? gamesFromAPI.results
+      : Array.isArray(gamesFromAPI)
+        ? gamesFromAPI
+        : [];
+
     getRandomGames();
   } catch (error) {
     console.error("Error al cargar juegos:", error);
@@ -34,6 +51,7 @@ onMounted(async () => {
   }
 });
 </script>
+
 
 
 <template>
