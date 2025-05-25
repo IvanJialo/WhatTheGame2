@@ -14,9 +14,9 @@ export default defineConfig({
       manifest: {
         name: 'WhatTheGame',
         short_name: 'WhatTheGame',
-        description: 'Descubre cuánto duran los videojuegos y mucho más',
+        description: 'Discover how long your favorite video games last',
         theme_color: '#000000',
-        background_color: '#ffffff',
+        background_color: '#000000',
         display: 'standalone',
         start_url: '/',
         icons: [
