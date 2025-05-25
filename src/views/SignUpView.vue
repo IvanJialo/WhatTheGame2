@@ -73,8 +73,9 @@
 <script setup>
 import { ref } from 'vue'
 import { RouterLink, useRouter } from 'vue-router'
-import { auth } from '@/data/firebase'
+import { auth, db } from '@/data/firebase'  // asegúrate que exportas 'db' en firebase.js
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth'
+import { doc, setDoc } from 'firebase/firestore'
 
 const name = ref('')
 const email = ref('')
@@ -93,8 +94,18 @@ const register = async () => {
 
   try {
     const userCredential = await createUserWithEmailAndPassword(auth, email.value, password.value)
-    await updateProfile(userCredential.user, { displayName: name.value })
-    router.push('/login')
+    const user = userCredential.user
+
+    await updateProfile(user, { displayName: name.value })
+
+    // Guardar datos extra en Firestore
+    await setDoc(doc(db, 'users', user.uid), {
+      name: name.value,
+      email: email.value,
+      favorites: []
+    })
+
+    router.push('/')
   } catch (error) {
     errorMessage.value = error.message
   }

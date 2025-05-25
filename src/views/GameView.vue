@@ -1,6 +1,8 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
+import { auth, db } from '@/data/firebase'
+import { doc, getDoc, updateDoc, arrayUnion, arrayRemove, setDoc } from 'firebase/firestore'
 import { getGameDetailsById, getGameStores, getGameTrailers, getStoreById, getGameScreenshots } from '@/data/rawg';
 import GameSkeleton from '@/components/GameSkeleton.vue';
 
@@ -13,6 +15,8 @@ const route = useRoute();
 const selectedScreenshot = ref(null);
 const showModal = ref(false);
 const loading = ref(true);
+const user = ref(auth.currentUser)
+const isFavorite = ref(false)
 
 const openModal = (image) => {
   selectedScreenshot.value = image;
@@ -24,6 +28,48 @@ const closeModal = () => {
   selectedScreenshot.value = null;
 };
 
+auth.onAuthStateChanged((u) => {
+  user.value = u
+})
+
+const checkFavorite = async (gameId) => {
+  if (!user.value) return
+  const userDocRef = doc(db, 'users', user.value.uid)
+  const docSnap = await getDoc(userDocRef)
+  if (docSnap.exists()) {
+    const data = docSnap.data()
+    isFavorite.value = data.favorites?.includes(gameId) || false
+  }
+}
+
+const toggleFavorite = async (gameId) => {
+  if (!user.value) {
+    alert('Tienes que iniciar sesión para guardar favoritos')
+    return
+  }
+
+  const userDocRef = doc(db, 'users', user.value.uid)
+
+  // Si el documento del usuario no existe aún, lo creamos con un array vacío
+  const docSnap = await getDoc(userDocRef)
+  if (!docSnap.exists()) {
+    await setDoc(userDocRef, {
+      favorites: []
+    })
+  }
+
+  if (isFavorite.value) {
+    await updateDoc(userDocRef, {
+      favorites: arrayRemove(gameId)
+    })
+    isFavorite.value = false
+  } else {
+    await updateDoc(userDocRef, {
+      favorites: arrayUnion(gameId)
+    })
+    isFavorite.value = true
+  }
+}
 
 watch(
   () => route.params.id,
@@ -60,6 +106,8 @@ watch(
 
       // Obtener screenshots
       gameScreenshots.value = (await getGameScreenshots(gameId)).results;
+
+      await checkFavorite(gameId)
 
       loading.value = false;
 
@@ -118,23 +166,44 @@ watch(
               {{ gameDetails.name }}
             </h1>
 
+            <div class="flex items-center gap-2 mt-4">
+              <button v-if="user" @click="toggleFavorite(route.params.id)"
+                class="group relative flex items-center gap-2 text-sm md:text-base px-4 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white transition duration-300 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  :class="['h-5 w-5 transition-transform duration-300', isFavorite ? 'fill-red-500 scale-125' : 'fill-white group-hover:scale-110']"
+                  viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42
+                    4.42 3 7.5 3c1.74 0 3.41 0.81
+                    4.5 2.09C13.09 3.81 14.76 3 16.5
+                    3 19.58 3 22 5.42 22 8.5c0
+                    3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                {{ isFavorite ? 'Quitar de favoritos' : 'Añadir a favoritos' }}
+              </button>
+            </div>
+
+
             <div class="flex flex-wrap gap-4 text-sm">
-              <div v-if="gameDetails.released" class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
+              <div v-if="gameDetails.released"
+                class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
                 <i class="pi pi-calendar text-[#b197ff]"></i>
                 <span>{{ gameDetails.released }}</span>
               </div>
 
-              <div v-if="gameDetails.playtime" class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
+              <div v-if="gameDetails.playtime"
+                class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
                 <i class="pi pi-clock text-[#b197ff]"></i>
                 <span>{{ gameDetails.playtime }}h</span>
               </div>
 
-              <div v-if="gameDetails.rating" class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
+              <div v-if="gameDetails.rating"
+                class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
                 <i class="pi pi-star text-[#b197ff]"></i>
                 <span>Rating: {{ gameDetails.rating }}/5</span>
               </div>
 
-              <div v-if="gameDetails.esrb_rating" class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
+              <div v-if="gameDetails.esrb_rating"
+                class="flex items-center gap-2 bg-white/80 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-full">
                 <i class="pi pi-users text-[#b197ff]"></i>
                 <span>Age: {{ gameDetails.esrb_rating.name }}</span>
               </div>
