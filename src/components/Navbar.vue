@@ -2,10 +2,11 @@
 import { RouterLink, useRouter } from 'vue-router';
 import ToggleDarkLight from './ToggleDarkLight.vue';
 import SearchInput from './SearchInput.vue';
-import { computed, ref, watch } from 'vue';
+import { computed, ref, watch, onMounted, onBeforeUnmount } from 'vue';
 import { useAuth } from '@/data/auth'
 
 const showProfileMenu = ref(false);
+const profileMenuRef = ref(null);
 const { user, logOut } = useAuth()
 const showMobileMenu = ref(false);
 const showSearchInput = computed(() => {
@@ -13,6 +14,20 @@ const showSearchInput = computed(() => {
 });
 const router = useRouter();
 const showSearchModal = ref(false);
+
+const handleClickOutside = (event) => {
+  if (profileMenuRef.value && !profileMenuRef.value.contains(event.target)) {
+    showProfileMenu.value = false;
+  }
+};
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside);
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener('click', handleClickOutside);
+});
 
 watch(
   () => router.currentRoute.value.fullPath,
@@ -100,7 +115,7 @@ watch(
             </RouterLink>
           </div>
 
-          <div v-else class="relative">
+          <div v-else class="relative" ref="profileMenuRef">
             <button @click="showProfileMenu = !showProfileMenu"
               class="p-2 rounded-full hover:bg-[#DCD0FF] dark:hover:bg-[#b197ff]">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black dark:text-white" fill="none"
