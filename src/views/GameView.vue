@@ -1,8 +1,8 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
-// import dataGame from '@/data/games.json';
 import { getGameDetailsById, getGameStores, getGameTrailers, getStoreById, getGameScreenshots } from '@/data/rawg';
+import GameSkeleton from '@/components/GameSkeleton.vue';
 
 const gameScreenshots = ref([])
 const storeNames = ref([])
@@ -10,10 +10,9 @@ const gameStores = ref([]);
 const gameDetails = ref(null);
 const gameTrailers = ref(null);
 const route = useRoute();
-// const game = ref(null);
-
 const selectedScreenshot = ref(null);
 const showModal = ref(false);
+const loading = ref(true);
 
 const openModal = (image) => {
   selectedScreenshot.value = image;
@@ -62,32 +61,24 @@ watch(
       // Obtener screenshots
       gameScreenshots.value = (await getGameScreenshots(gameId)).results;
 
+      loading.value = false;
+
     } catch (error) {
       console.error('Error al cargar datos del juego:', error);
+
+      loading.value = false;
     }
   },
   { immediate: true }
 );
 
-
-// console.log("Store Names: " + storeNames)
-// console.log("Game Stores: " + gameStores)
-// console.log("Game Details: " + gameDetails)
-
-// const findGame = (gameName) => {
-//   return dataGame.categories.flatMap(category => category.games).find(game => game.name === gameName);
-// };
-
-// game.value = findGame(route.params.id);
-
-// watch( () => route.params.id, (newGameName) => {
-//     game.value = findGame(newGameName);
-//   }
-// );
 </script>
 
 <template>
-  <div v-if="gameDetails" class=" bg-white/50 dark:bg-black/70 backdrop-blur-sm sm:py-12">
+
+  <GameSkeleton v-if="loading" />
+
+  <div v-else-if="gameDetails" class=" bg-white/50 dark:bg-black/70 backdrop-blur-sm sm:py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-9">
       <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8">
         <div class="space-y-8">
@@ -203,7 +194,7 @@ watch(
             </div>
           </div>
 
-          <div v-if="gameTrailers.results.length" class="bg-white/80 dark:bg-black/80 backdrop-blur rounded-xl p-6">
+          <div v-if="gameTrailers?.results?.length" class="bg-white/80 dark:bg-black/80 backdrop-blur rounded-xl p-6">
             <h3 class="text-xl font-bold text-[#b197ff] mb-4">Trailer</h3>
             <div class="relative aspect-video rounded-lg overflow-hidden shadow-lg">
               <video controls class="w-full h-full object-cover">
