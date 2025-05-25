@@ -64,6 +64,13 @@ watch(
               Hosting
             </RouterLink>
           </li>
+          <li>
+            <RouterLink class="text-black transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+              to="/subscription">
+              Subscription
+            </RouterLink>
+          </li>
+
         </ul>
       </nav>
 
@@ -158,6 +165,12 @@ watch(
                 <RouterLink class="block py-2 text-lg hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-4"
                   to="/hosting" @click="showMobileMenu = false">
                   Hosting
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink class="block py-2 text-lg hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-4"
+                  to="/subscription" @click="showMobileMenu = false">
+                  Subscription
                 </RouterLink>
               </li>
             </ul>

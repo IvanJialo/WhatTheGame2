@@ -6,7 +6,8 @@ import LatestView from '../views/LatestView.vue'
 import GameView from '../views/GameView.vue'
 import LogInView from '../views/LogInView.vue'
 import SignUpView from '../views/SignUpView.vue'
-import HostingView from '@/views/HostingView.vue'
+import HostingView from '../views/HostingView.vue'
+import SubscriptionView from '../views/SubscriptionView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
       path: '/hosting',
       name: 'hosting',
       component: HostingView,
+    },
+    {
+      path: '/subscription',
+      name: 'subscription',
+      component: SubscriptionView,
     }
   ],
   scrollBehavior() {
