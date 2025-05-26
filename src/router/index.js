@@ -8,6 +8,9 @@ import LogInView from '../views/LogInView.vue'
 import SignUpView from '../views/SignUpView.vue'
 import HostingView from '../views/HostingView.vue'
 import SubscriptionView from '../views/SubscriptionView.vue'
+import FavoritesView from '../views/FavoritesView.vue'
+
+import { getAuth } from 'firebase/auth'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,11 +59,30 @@ const router = createRouter({
       path: '/subscription',
       name: 'subscription',
       component: SubscriptionView,
+    },
+    {
+      path: '/favorites',
+      name: 'favorites',
+      component: FavoritesView,
+      meta: { requiresAuth: true }
     }
   ],
   scrollBehavior() {
     return { top: 0 };
   },
+})
+
+// ... tu configuración del router ...
+
+router.beforeEach((to, from, next) => {
+  const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
+  const user = getAuth().currentUser
+
+  if (requiresAuth && !user) {
+    next('/login')
+  } else {
+    next()
+  }
 })
 
 export default router

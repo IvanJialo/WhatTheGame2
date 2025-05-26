@@ -139,6 +139,18 @@ async function getLatestGames() {
   }
 }
 
+async function getGamesByIds(ids = []) {
+  try {
+    const response = await fetch(`${BASE_URL}/games?ids=${ids.join(',')}&key=${API_KEY}`);
+    if (!response.ok) throw new Error('Error al obtener juegos por IDs');
+    const data = await response.json();
+    return data.results || [];
+  } catch (error) {
+    console.error('Error al obtener juegos por IDs:', error);
+    throw error;
+  }
+}
+
 export { 
     getGamesHome,
     getGameDetailsById,
@@ -151,6 +163,6 @@ export {
     searchGames,
     getMostPlayedGames,
     getLatestGames,
-
+    getGamesByIds
  };
 

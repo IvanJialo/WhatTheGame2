@@ -130,6 +130,13 @@ watch(
               <div class="px-4 py-2 text-sm text-gray-700 dark:text-gray-300">
                 {{ user.email }}
               </div>
+
+              <RouterLink to="/favorites"
+                class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
+                @click="showProfileMenu = false">
+                Favorites
+              </RouterLink>
+
               <hr class="border-gray-200 dark:border-gray-700" />
               <button @click="logOut"
                 class="w-full text-left px-4 py-2 text-sm text-red-500 hover:bg-gray-100 dark:hover:bg-gray-800">
@@ -148,7 +155,7 @@ watch(
       </div>
 
       <div v-show="showMobileMenu"
-        class="md:hidden absolute top-16 inset-x-0 bg-white/70 dark:bg-black/70 border-b shadow-lg">
+        class="md:hidden absolute top-16 inset-x-0 bg-white/95 dark:bg-black/95 border-b shadow-lg">
         <div class="px-4 py-4 space-y-4">
           <nav>
             <ul class="space-y-4">
@@ -186,6 +193,12 @@ watch(
                 <RouterLink class="block py-2 text-lg hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-4"
                   to="/subscription" @click="showMobileMenu = false">
                   Subscription
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink class="block py-2 text-lg hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-4"
+                  to="/favorites" @click="showMobileMenu = false">
+                  Favorites
                 </RouterLink>
               </li>
             </ul>
