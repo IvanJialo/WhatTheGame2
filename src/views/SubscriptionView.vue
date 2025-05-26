@@ -3,10 +3,10 @@
     <!-- Título principal -->
     <div class="text-center mb-12 animate-blurred-fade-in">
       <h1 class="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
-        Planes de suscripción
+        Subscription Plans
       </h1>
       <p class="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-        Elige el plan que mejor se adapte a tu experiencia gamer.
+        Choose the plan that best fits your gaming experience.
       </p>
     </div>
 
@@ -16,17 +16,17 @@
       <div class="bg-gray-100/80 dark:bg-zinc-900/80 rounded-2xl shadow-lg p-6 flex flex-col justify-between text-center border border-gray-300 dark:border-zinc-700">
         <div>
           <h2 class="text-2xl font-semibold text-black dark:text-white mb-2">Free</h2>
-          <p class="text-gray-600 dark:text-gray-400 mb-4">Lo esencial para cualquier jugador.</p>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">The essentials for any player.</p>
           <ul class="text-left text-gray-800 dark:text-gray-300 mb-6 space-y-2">
-            <li>✔️ Acceso al catálogo de juegos</li>
-            <li>✔️ Ver información y detalles</li>
-            <li>✔️ Guardar juegos en favoritos</li>
+            <li>✔️ Access to game catalog</li>
+            <li>✔️ View information and details</li>
+            <li>✔️ Save games to favorites</li>
           </ul>
         </div>
         <div>
-          <div class="text-2xl font-bold text-black dark:text-white mb-4">Gratis</div>
+          <div class="text-2xl font-bold text-black dark:text-white mb-4">Free</div>
           <button class="bg-gray-300 dark:bg-zinc-700 text-black dark:text-white font-semibold py-2 px-4 rounded-lg cursor-default">
-            Plan actual
+            Current plan
           </button>
         </div>
       </div>
@@ -35,19 +35,19 @@
       <div class="bg-[#f3e8ff]/80 dark:bg-[#241d34]/80 border-4 border-[#c084fc] rounded-2xl shadow-2xl p-6 flex flex-col justify-between text-center transform scale-105">
         <div>
           <h2 class="text-2xl font-semibold text-black dark:text-white mb-2">Gamer</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-4">Lleva tu experiencia un paso más allá.</p>
+          <p class="text-gray-700 dark:text-gray-300 mb-4">Take your experience to the next level.</p>
           <ul class="text-left text-gray-800 dark:text-gray-300 mb-6 space-y-2">
-            <li>✔️ Todo del plan Free</li>
-            <li>✔️ Sin anuncios</li>
-            <li>✔️ 10% descuento en servidores</li>
-            <li>✔️ Acceso a lanzamientos recientes (Latest)</li>
-            <li>✔️ Deja comentarios y valoraciones</li>
+            <li>✔️ Everything from the Free plan</li>
+            <li>✔️ No ads</li>
+            <li>✔️ 10% discount on servers</li>
+            <li>✔️ Access to latest releases (Latest)</li>
+            <li>✔️ Leave comments and ratings</li>
           </ul>
         </div>
         <div>
-          <div class="text-2xl font-bold text-black dark:text-white mb-4">5,99€ / mes</div>
+          <div class="text-2xl font-bold text-black dark:text-white mb-4">5.99€ / month</div>
           <button class="bg-[#c084fc] hover:bg-[#e9d5ff] text-black font-semibold py-2 px-6 rounded-lg transition duration-300">
-            Suscribirse
+            Subscribe
           </button>
         </div>
       </div>
@@ -56,18 +56,18 @@
       <div class="bg-gray-100/80 dark:bg-zinc-900/80 rounded-2xl shadow-lg p-6 flex flex-col justify-between text-center border-2 border-yellow-400">
         <div>
           <h2 class="text-2xl font-semibold text-black dark:text-white mb-2">Hardcore</h2>
-          <p class="text-gray-600 dark:text-gray-400 mb-4">Para los jugadores más exigentes.</p>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">For the most demanding players.</p>
           <ul class="text-left text-gray-800 dark:text-gray-300 mb-6 space-y-2">
-            <li>✔️ Todo del plan Gamer</li>
-            <li>✔️ 20% descuento en servidores</li>
-            <li>✔️ Badges e iconos exclusivos</li>
-            <li>✔️ Comentarios con capturas y clips (30s)</li>
+            <li>✔️ Everything from the Gamer plan</li>
+            <li>✔️ 20% off on servers</li>
+            <li>✔️ Exclusive badges and icons</li>
+            <li>✔️ Comments with screenshots and clips (30s)</li>
           </ul>
         </div>
         <div>
-          <div class="text-2xl font-bold text-black dark:text-white mb-4">12,99€ / mes</div>
+          <div class="text-2xl font-bold text-black dark:text-white mb-4">12.99€ / month</div>
           <button class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-2 px-6 rounded-lg transition duration-300">
-            Suscribirse
+            Subscribe
           </button>
         </div>
       </div>
