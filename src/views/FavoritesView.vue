@@ -47,7 +47,8 @@ onMounted(async () => {
 
 
 <template>
-  <section class="pt-28 pb-12 px-4 max-w-screen-xl mx-auto">
+<div class="bg-white/70 dark:bg-black/70">
+  <section class="pt-28 pb-12 px-4 max-w-screen-xl mx-auto ">
     <h1 class="text-3xl font-bold mb-6 text-center text-black dark:text-white">Your Favorite Games</h1>
 
     <div v-if="loading" class="flex justify-center items-center py-12">
@@ -70,6 +71,7 @@ onMounted(async () => {
       />
     </transition-group>
   </section>
+</div>
 </template>
 
 <style scoped>
