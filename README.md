@@ -6,26 +6,66 @@ This template should help get you started developing with Vue 3 in Vite.
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/IvanJialo/WhatTheGame2)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+# WhatTheGame – Instalación y ejecución
 
-## Customize configuration
+Este proyecto está desarrollado con **Vue 3** y **Vite**. A continuación se detallan los pasos necesarios para instalarlo y ejecutarlo localmente o en producción.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🧩 Requisitos previos
 
-## Project Setup
+- [Node.js](https://nodejs.org/) (versión recomendada: 18 o superior)
+- npm (se instala junto con Node)
 
-```sh
+## ⚙️ Instalación
+
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/tuusuario/WhatTheGame.git
+cd WhatTheGame
+```
+
+2. Instala las dependencias:
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## 🚀 Modo desarrollo
 
-```sh
+Para ejecutar el proyecto en entorno de desarrollo con hot reload:
+
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+La aplicación se abrirá en `http://localhost:5173` (por defecto).
 
-```sh
+## 📦 Generar versión de producción
+
+Para compilar la aplicación:
+
+```bash
 npm run build
 ```
+
+Esto generará una carpeta `dist/` con el proyecto listo para producción.
+
+## 📡 Servir la app compilada
+
+Para lanzar un servidor local que sirva los archivos estáticos de producción (útil para pruebas o despliegue en servidores sin configuración adicional):
+
+1. Instala `serve` si no lo tienes:
+
+```bash
+npm install -g serve
+```
+
+2. Ejecuta la app desde `dist`:
+
+```bash
+serve -s dist
+```
+
+La app estará disponible en `http://localhost:3000` (puerto por defecto).
+
+## ✅ Entorno listo
