@@ -1,9 +1,3 @@
-# WhatTheGame2
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/IvanJialo/WhatTheGame2)
 
 # WhatTheGame – Instalación y ejecución
